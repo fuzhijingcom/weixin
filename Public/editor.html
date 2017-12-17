@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)https://sdk.sinacloud.com/index.php?appname=fu888&version=1 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>SAE Editor</title>
+        <link href="./editor_files/sae_editor.css" rel="stylesheet" type="text/css">
+        <link href="./editor_files/console.css" rel="stylesheet" type="text/css">
+        <link href="./editor_files/codemirror.css" rel="stylesheet" type="text/css">
+        <link href="./editor_files/night.css" rel="stylesheet" type="text/css">
+        <link href="./editor_files/cobalt.css" rel="stylesheet" type="text/css">
+        <link href="./editor_files/jquery-ui.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./editor_files/jquery.min.js"></script>
+        <script type="text/javascript" src="./editor_files/jquery.cookie.js"></script>
+        <script type="text/javascript" src="./editor_files/sae_editor.js"></script>
+        <script type="text/javascript" src="./editor_files/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./editor_files/codemirror.js"></script>
+        <script type="text/javascript" src="./editor_files/css.js"></script>
+        <script type="text/javascript" src="./editor_files/javascript.js"></script>
+        <script type="text/javascript" src="./editor_files/xml.js"></script>
+        <script type="text/javascript" src="./editor_files/clike.js"></script>
+        <script type="text/javascript" src="./editor_files/htmlmixed.js"></script>
+        <script type="text/javascript" src="./editor_files/php.js"></script>
+        <script type="text/javascript" src="./editor_files/yaml.js"></script>
+        <script type="text/javascript" src="./editor_files/python.js"></script>
+        <!--<script type="text/javascript" src="static/codemirror/mode/shell/shell.js?v=20161221"></script>-->
+        <script type="text/javascript" src="./editor_files/ajaxfileupload.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#select_applist").val('fu888');
+    $("#select_versionlist").val('1');
+    sae_glvar.appname = 'fu888';
+    getDir('1/','/');
+});
+</script>
+    </head>
+    <body>
+        <div class="topbar"> 
+            <span class="logo"><a href="https://sdk.sinacloud.com/index.php?appname=fu888&version=1#"><img src="./editor_files/logo.gif" width="31" height="31" alt="logo"></a> </span> 
+            <span class="title">SAE CLOUD EDITOR</span> 
+            <span id="title_appname">APP:<span>fu888</span></span> 
+            <span id="title_version">VERSION:<span>1</span></span> 
+            <span id="opmsg" style="margin-left:30px;font-size:12px;"></span> 
+            <span style="float:right;margin-left:10px;">
+               <a href="javascript:void(0);" onclick="fontSize()" style="color:#FFF;font-size:14px;">设置</a> 
+               <a href="javascript:void(0);" onclick="logout()" style="color:#FFF;font-size:14px;">注销</a> 
+            </span> 
+            <span class="saveall">
+                <input type="button" class="saveall_btn" value="全部保存" name="saveall" onclick="saveAll()">
+            </span> 
+            <div class="clr"></div>
+        </div>
+        <div class="ebody" style="">
+            <div class="eleft">
+                <div class="tabbar_bg bodr_r">
+                    <span style="margin-left:5px;">应用</span>
+                    <select id="select_applist" style="width:115px;overflow-x:hidden;">
+                                                <option value="fu888">fu888</option>                
+                                            </select>
+                    <select id="select_versionlist">
+                                                <option value="1">1</option>                
+                                            </select>
+                    <a id="newapplink" href="" target="_blank"></a>
+                </div>
+                <div id="naviarea" class="bodr_r" onselectstart="return false;">
+                    <div class="applistbar bodr_b" style="overflow: hidden;"> 
+                        <div style="width:150px;float:left;overflow:hidden;">
+                            <span style="margin-left:5px;">路径</span>
+                            <span class="applist">
+                                <select name="pathlist" id="pathlist" style="width:115px;overflow-x:hidden;">
+                                <option value="1/">/</option></select>
+                            </span>
+                        </div>
+                        <div style="width:60px;float:left;">
+                            <span class="icon" id="createfile_icon" style="margin-left:5px;"><img src="./editor_files/file_add_icon.gif" width="16" height="17" alt="create file" title="新建文件"></span> 
+                            <span class="icon" id="createfolder_icon" style="margin-left:5px;"><img src="./editor_files/folder_add_icon.gif" width="18" height="16" alt="create folder" title="新建文件夹"></span> 
+                            <span class="icon" id="uploadfile_icon" style="margin-left:5px;"><img src="./editor_files/file_upload_icon.gif" width="11" height="13" alt="create file" title="上传文件"></span> 
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                    <div id="filelist" style="height: 839px;">
+                        <div id="selected_bg" class="selected_bg" style="top: 20px; display: block;"></div>
+                        <div id="treecontainer">
+                            <ul class="tree" id="filetree"><li class="file" title="config.yaml"><div class="name" path="1/config.yaml" editable="true" url="http://1.fu888.applinzi.com/config.yaml">config.yaml</div></li><li class="file" title="index.php"><div class="name selected" path="1/index.php" editable="true" url="http://1.fu888.applinzi.com/index.php">index.php</div></li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eright" id="eright" style="width: 820px;">
+                <div onselectstart="return false;" class="tabbar_bg">
+                    <div id="show_hide_filelist" class="tabbar_bg bodr_r">《</div>
+                    <div id="prefile" class="tabbar_bg bodr_r">&lt;</div>
+                    <div id="tabbarcontainer" class="tabbarout" style="width: 770px;">
+                        <div id="tabbar" class="tabbar tabbar_bg"><div class="tab bodr_r cur_tab" id="tab_0" path="1/index.php" tabi="0"> <span class="title">1/index.php</span> <span class="icon"><a href="https://sdk.sinacloud.com/index.php?appname=fu888&version=1#"><img src="./editor_files/z.gif" width="10" height="10" class="close_icon"></a></span><div class="clr"></div></div>
+                            <div class="clr"></div>
+                        </div>
+                    </div>
+                    <div id="nextfile" class="tabbar_bg bodr_l">&gt;</div>
+                    <div class="clr"></div>
+                </div>
+                <div id="codearea" class="codearea" style="height: 865px; width: 840px;"><div class="codecontainer" id="codecontainer_0" tabi="0" style="display: block; height: 865px;"><div class="CodeMirror cm-s-cobalt" style="width: 820px; height: 865px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 18px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="display: block; right: 0px; left: 30px;"><div style="height: 100%; min-height: 1px; width: 7423px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -17px; border-right-width: 13px; min-height: 36px; min-width: 7423px; padding-right: 0px; padding-bottom: 17px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 4px; top: 14px; height: 14px;">&nbsp;</div></div><div class="CodeMirror-code"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">"utf-8"</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>欢迎使用新浪云<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">h4</span><span class="cm-tag cm-bracket">&gt;</span>欢迎使用新浪云<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h4</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>技术领先的新浪云正为您提供稳定的云计算服务。<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>使用中遇到问题欢迎提<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://www.sinacloud.com/ucenter/workorderadd.html"</span><span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span><span class="cm-tag cm-bracket">&gt;</span>工单<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>咨询，您会在第一时间得到专业的回答。<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>您可能需要了解以下内容：<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">ul</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://www.sinacloud.com/doc/sae/tutorial/index.html?from=app_index"</span><span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span><span class="cm-tag cm-bracket">&gt;</span>入门指南<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://www.sinacloud.com/index/apply_ospace.html?from=app_index"</span><span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span><span class="cm-tag cm-bracket">&gt;</span>免费申请成为合作伙伴<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://www.sinacloud.com/index/applyqy.html?from=app_index"</span><span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span><span class="cm-tag cm-bracket">&gt;</span>免费申请迁移指导<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://www.sinacloud.com/index/faq/sort_id/1.html?from=app_index"</span><span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span><span class="cm-tag cm-bracket">&gt;</span>常见问题<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://weibo.com/saet"</span><span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span><span class="cm-tag cm-bracket">&gt;</span>新浪云官方微博<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">ul</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>新浪云产品动态：<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">id</span>=<span class="cm-string">"news"</span><span class="cm-tag cm-bracket">&gt;</span>加载中...<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://www.sinacloud.com/news.html?from=app_index"</span><span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span><span class="cm-tag cm-bracket">&gt;</span>更多&gt;&gt;<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text/javascript"</span><span class="cm-attribute">src</span>=<span class="cm-string">"http://cdn.static.sinacloud.com/public/sinacloud_news.js"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">b</span><span class="cm-tag cm-bracket">&gt;</span>提示：<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">b</span><span class="cm-tag cm-bracket">&gt;</span>此页面是默认首页 index.html、index.php 如果您不需要可以删除或修改。<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom-width: 17px; border-bottom-style: solid; border-bottom-color: transparent; top: 36px;"></div><div class="CodeMirror-gutters" style="height: 66px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div></div> </div>
+                            </div>
+            <div class="clr"></div>
+        </div>
+        <div class="exmenu" id="exmenu" style="display: none;">
+            <div class="entry">编辑</div>
+            <div class="entry">下载</div>
+            <div class="entry">重命名</div>
+            <div class="entry">通过URL访问</div>
+            <div class="split">
+                <div class="line"></div>
+            </div>
+            <div class="entry">删除</div>
+        </div>
+        
+    
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-dlg1" style="display: none; z-index: 1000; outline: 0px; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-dlg1">&nbsp;</span><a href="https://sdk.sinacloud.com/index.php?appname=fu888&version=1#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dlg1" class="ui-dialog-content ui-widget-content">
+        </div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div></div></body></html>

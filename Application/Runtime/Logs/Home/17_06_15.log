@@ -1,0 +1,1463 @@
+[ 2017-06-15T00:07:32+08:00 ] 101.226.68.215 /Home/Index/editor/file_id/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003030s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0004s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='29' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='29' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='18077' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2017-06-15T00:07:32+08:00 ] 101.226.64.174 /Home/Index/editor/file_id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='31' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-06-15T00:30:18+08:00 ] 101.226.79.190 /index.php?m%3Dhome%26c%3Dindex%26a%3Dlogin%26uid%3D18078%26realname%3D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-06-15T01:16:16+08:00 ] 112.90.82.218 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Undefined index: uid /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 189 行.
+NOTIC: [8] Undefined index: realname /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 190 行.
+NOTIC: [8] Undefined variable: file_name /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 201 行.
+NOTIC: [2] mkdir(): File exists /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 202 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2017-06-15T03:29:18+08:00 ] 101.226.102.70 /index.php?m%253Dhome%2526c%253Dindex%2526a%253Dlogin%2526uid%253D18078%2526realname%253D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-06-15T08:02:20+08:00 ] 183.232.90.36 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-06-15T08:02:20+08:00 ] 163.177.93.243 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-06-15T08:32:01+08:00 ] 183.26.255.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-06-15T08:32:07+08:00 ] 183.26.255.11 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+NOTIC: [8] Undefined index: uid /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 189 行.
+NOTIC: [8] Undefined index: realname /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 190 行.
+NOTIC: [8] Undefined variable: file_name /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 201 行.
+NOTIC: [2] mkdir(): File exists /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 202 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2017-06-15T08:32:36+08:00 ] 183.26.255.11 /index.php?m=home&c=index&a=login&uid=15081&realname=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined variable: file_name /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 201 行.
+NOTIC: [2] mkdir(): File exists /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 202 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-06-15T08:32:39+08:00 ] 183.26.255.11 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `pre_user` SET `last_login`='2017-06-15 08:32:39' WHERE ( controller_id='15081' ) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-06-15T08:32:41+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0006s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2017-06-15T08:36:04+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-06-15T08:36:25+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0006s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0004s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2017-06-15T08:36:35+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0007s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0008s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-06-15T08:38:23+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-06-15T08:39:07+08:00 ] 183.26.255.11 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0007s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-06-15T08:39:09+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0006s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-06-15T08:39:12+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0007s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-06-15T08:39:54+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0007s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0004s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-06-15T08:40:31+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-06-15T08:40:47+08:00 ] 183.26.255.11 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-06-15T08:40:49+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0006s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-06-15T08:41:33+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0007s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-06-15T08:41:36+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-06-15T08:51:41+08:00 ] 183.26.255.11 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0006s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2017-06-15T08:51:43+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-06-15T08:52:55+08:00 ] 183.26.255.11 /home/index/images
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0006s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_img` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_img` WHERE ( controller_id='15081' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: alltable /home/wwwroot/weixin.yudw.com/Application/Runtime/Cache/Home/e60b4a7055e1a2cab3735c3e16847a1d.php 第 456 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-06-15T08:53:10+08:00 ] 183.26.255.11 /home/index/db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002262s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0007s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pre_img` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/style.html): failed to open stream: No such file or directory /home/wwwroot/weixin.yudw.com/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: alltable /home/wwwroot/weixin.yudw.com/Application/Runtime/Cache/Home/404a571b0c2505b2b7d037f2c18f15d5.php 第 530 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-06-15T08:53:13+08:00 ] 183.26.255.11 /home/index/db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0006s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pre_img` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/style.html): failed to open stream: No such file or directory /home/wwwroot/weixin.yudw.com/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: alltable /home/wwwroot/weixin.yudw.com/Application/Runtime/Cache/Home/404a571b0c2505b2b7d037f2c18f15d5.php 第 530 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-06-15T08:53:14+08:00 ] 183.26.255.11 /home/index/controller
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2017-06-15T08:53:16+08:00 ] 183.26.255.11 /home/index/images
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_img` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_img` WHERE ( controller_id='15081' )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: alltable /home/wwwroot/weixin.yudw.com/Application/Runtime/Cache/Home/e60b4a7055e1a2cab3735c3e16847a1d.php 第 456 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2017-06-15T08:53:18+08:00 ] 183.26.255.11 /home/index/controller
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-06-15T08:55:25+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0006s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0004s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2017-06-15T08:55:48+08:00 ] 183.26.255.11 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0008s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-06-15T08:55:50+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-06-15T08:58:40+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-06-15T08:59:05+08:00 ] 183.26.255.11 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0006s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-06-15T08:59:07+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0006s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2017-06-15T08:59:22+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-06-15T09:33:27+08:00 ] 183.26.255.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `pre_user` SET `last_login`='2017-06-15 09:33:27' WHERE ( controller_id='15081' ) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-06-15T09:33:29+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-06-15T09:33:33+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-06-15T09:34:02+08:00 ] 183.26.255.11 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007867s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0007s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2017-06-15T09:34:04+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-06-15T09:34:28+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0006s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0004s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-06-15T09:34:38+08:00 ] 183.26.255.11 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0007s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-06-15T09:34:41+08:00 ] 183.26.255.11 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='15081' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-06-15T09:38:37+08:00 ] 183.26.255.11 /Home/Index/editor/file_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0005s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='19' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0003s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='15081' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-06-15T10:41:04+08:00 ] 183.232.90.65 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-06-15T10:41:04+08:00 ] 163.177.93.241 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+
+[ 2017-06-15T10:44:55+08:00 ] 61.145.106.6 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-06-15T10:45:00+08:00 ] 61.145.106.6 /Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] Undefined index: uid /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 189 行.
+NOTIC: [8] Undefined index: realname /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 190 行.
+NOTIC: [8] Undefined variable: file_name /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 201 行.
+NOTIC: [2] mkdir(): File exists /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 202 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2017-06-15T10:46:22+08:00 ] 61.145.106.6 /index.php?m=home&c=index&a=login&uid=18078&realname=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+NOTIC: [8] Undefined variable: file_name /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 201 行.
+NOTIC: [2] mkdir(): File exists /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 202 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+
+[ 2017-06-15T10:46:24+08:00 ] 61.145.106.6 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `pre_user` SET `last_login`='2017-06-15 10:46:24' WHERE ( controller_id='18078' ) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-06-15T10:46:27+08:00 ] 61.145.106.6 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0005s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='18078' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-06-15T10:46:32+08:00 ] 61.145.106.6 /Home/Index/editor/file_id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0006s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='31' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0004s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [2] fclose() expects parameter 1 to be resource, string given /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 94 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-06-15T10:47:05+08:00 ] 61.145.106.6 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0007s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='31' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='31' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2017-06-15T10:47:07+08:00 ] 61.145.106.6 /Home/Index/controller.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `pre_user` [ RunTime:0.0020s ]
+SQL: SELECT `controller_name` FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pre_table` WHERE ( controller_id='18078' )  [ RunTime:0.0001s ]
+SQL: SELECT `appid` FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `appsecret` FROM `pre_user` WHERE ( controller_id='18078' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2017-06-15T11:23:07+08:00 ] 101.226.102.70 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-06-15T11:44:53+08:00 ] 183.57.53.177 /home/index/db
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-06-15T12:16:32+08:00 ] 101.226.64.174 /Home/Index/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] Undefined index: file_id /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 126 行.
+SQL: SHOW COLUMNS FROM `pre_table` [ RunTime:0.0006s ]
+SQL: SELECT `controller_id` FROM `pre_table` WHERE ( file_id='' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `file_name` FROM `pre_table` WHERE ( file_id='' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: file_contents /home/wwwroot/weixin.yudw.com/Application/Home/Controller/IndexController.class.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+

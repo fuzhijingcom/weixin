@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://sae.sina.com.cn/?m=vermng&app_id=fu888&__r=7CFQKA -->
+<html lang="zh-cn" data-lang="zh-cn" data-template="default" class="lang-zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="dns-prefetch" href="https://sae.sina.com.cn/">
+    <link rel="dns-prefetch" href="https://ww.sae.sinacdn.com/">
+    <link rel="dns-prefetch" href="https://www-static.stor.sinaapp.com/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="SAE Group">
+    <meta name="keywords" content=" PaaS,云服务,云托管,混合云,Docker,容器云">
+        <meta name="description" content="SinaAppEngine（SAE）是中国最早的公有云服务商、最大的PaaS服务厂商，也是国家工信部首批认证通过的“可信云”，提供网站、存储、数据库、缓存、队列、安全等服务，目前拥有近百万的开发者和上万家企业用户。">
+        <title>代码管理 - Sina App Engine - 免运维的云计算服务厂商</title>
+    <link rel="shortcut icon" href="https://sae.sina.com.cn/static/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./controller_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./controller_files/page-common.css">    <link rel="stylesheet" type="text/css" href="./controller_files/sidebar.css">    <link rel="stylesheet" type="text/css" href="./controller_files/home.css">        <style type="text/css">
+        #page-breadcrumb{display:none;}
+    </style>
+                <link rel="stylesheet" type="text/css" href="./controller_files/saved_resource">        
+    <script type="text/javascript">
+        var $SAE = $SAE || {version: 'The Dawn'};
+    </script>
+
+    <script type="text/javascript" src="./controller_files/common.js"></script><style type="text/css"></style>
+    <script type="text/javascript" src="./controller_files/common.part2.js"></script>
+    <script type="text/javascript" src="./controller_files/dropmenu.js"></script>
+
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="/static/css/v2/ie9.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="/static/css/v2/ie8.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/static/css/v2/ie7.css"/>
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="/static/css/v2/ie6.css"/>
+    <![endif]-->
+<script src="./controller_files/saved_resource(1)" type="text/javascript"></script><script src="./controller_files/saved_resource(2)" type="text/javascript"></script></head>
+<body id="body" class="vermng">
+<script type="text/javascript">
+$SAE['APP_DOMAIN'] = 'applinzi.com';
+$SAE['SAE_SERVER_NAME'] = 'sae.sina.com.cn';
+$SAE['SAECLOUD_AUTH_HOST'] = 'https://www.sinacloud.com/';
+$SAE['uid'] = 2000496155;
+$SAE['is_admin'] = '';
+$SAE['is_verified'] = '';
+$SAE['unVerifyOverAppLimit'] = '';
+$SAE['lockURL'] = $SAE['SAECLOUD_AUTH_HOST'] + '?m=sso&a=logout&callback=http%3A%2F%2Fsae.sina.com.cn%2F%3Fm%3Dfront';
+$SAE['mailError'] = 'Email';
+$SAE['mobileError'] = '手机号,';
+$SAE['passError'] = '安全密码,';
+$SAE['authRequired'] = true;
+$SAE['authRequiredText'] = "您需要补充以下信息后才能使用SAE：";
+$SAE['modeName'] = 'vermng';
+
+$SAE['APP_ID'] = 'fu888';
+$SAE['search_keywords'] = [];
+
+</script>
+<!--头部导航-->
+<div id="top_header"><!-- 公共顶导：这个文件的静态文件、链接等，必须写成绝对路径，否则可能出现无效链接 -->
+<!--<link rel="stylesheet" type="text/css" href="https://www.sinacloud.com/static/common/css/cheader.css?v=1.0.15.14">-->
+<style>
+@charset 'utf-8';
+
+/*************************************************/
+.page-head{min-width:1280px;height:64px;background-color:#148CCA;font-family:"hiragino sans gb","microsoft yahei"}
+
+.page-head  i.head-icon{display:inline-block;width:30px;height:20px;vertical-align:middle;}
+
+
+.page-head .logo-area{float:left;width:200px;height:64px;position:relative;}
+.page-head .page-logo{display:inline-block;margin:10px 0 0 22px;}
+
+.page-head .dashboard{float:left;margin-left:1px;width:110px;height:64px;position:relative;text-align:center;}
+.page-head .dashboard .db-title{display:inline-block;margin:22px 0;padding:0 20px;color:#fff;border-left:1px solid #38ACE7;border-right:1px solid #38ACE7;text-decoration:none;}
+.page-head .dashboard .db-title i.u-arrow{width:20px;height:15px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") 9px 2px no-repeat;}
+.page-head .dashboard:hover .db-title i.u-arrow{width:20px;height:15px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -34px -179px no-repeat;}
+.page-head .dashboard .db-dropdown-list{position:absolute;top:64px;left:-9999px;width:110px;margin:0;padding:0;list-style-type:none;z-index:1999;background:#fff;border:1px solid #eee;}
+.page-head .dashboard .db-dropdown-list ul{margin:0;padding:0;list-style-type:none;}
+.page-head .dashboard .db-dropdown-list ul li{line-height:38px;text-align:center;}
+.page-head .dashboard .db-dropdown-list ul li:hover{background:#ebebeb;}
+.page-head .dashboard .db-dropdown-list ul li a{display:inline-block;width:108px;color:#686868;text-decoration:none;}
+.page-head .dashboard:hover{background:#fff;}
+.page-head .dashboard:hover a.db-title{color:#686868;}
+.page-head .dashboard:hover a.db-title{border-color:#fff;}
+.page-head .dashboard:hover .db-dropdown-list{left:0;right:auto;}
+
+.page-head .useri{float:right;display:inline-block;height:64px;color:#999;}
+.page-head .useri .u-consult{float:left;display:inline-block;width:135px;height:64px;margin:0;padding:23px 0;color:#fff;}
+.page-head .useri .u-consult i.phone{display:inline-block;width:17px;height:17px;vertical-align:middle;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/phone.png") -1px -1px no-repeat;}
+.page-head .useri ul.dashboard-nav{display:inline-block;margin:0;padding:0;list-style-type:none;}
+.page-head .useri ul li{margin:0 0 0 0;padding:0;float:left;height:64px;}
+.page-head .useri ul li.nav-li:hover{background-color:#fff;border-bottom:1px solid #eee;}
+.page-head .useri ul li.nav-li:hover a{color:#585757;}
+.page-head .useri ul li.nav-li:hover a{border-color:#fff;}
+.page-head .useri ul li a{display:inline-block;margin:22px 0;padding:0 20px;border-left:1px solid #38ACE7;text-decoration:none;color:#fff;}
+.page-head .useri li.mobile-dropdown{width:155px;position:relative;}
+.page-head .useri li.mobile-dropdown a{padding:0 0 0 15px;}
+.page-head .useri ul.mobile-dropdown-list{position:absolute;top:64px;left:-9999px;width:390px;height:152px;list-style-type:none;margin:0;padding:0;z-index:1000;border:1px solid #eee;border-top:none;background:#fff;-webkit-box-shadow:1px 1px 1px #ccc;-moz-box-shadow: 2px 2px 2px #ccc;box-shadow: 2px 2px 2px #ccc;}
+.page-head .useri ul.mobile-dropdown-list li{float:left;height:100px;margin:0;}
+.page-head .useri ul.mobile-dropdown-list li.mobile-tip{width:240px;padding:20px 0px 0 10px;border:none;}
+.page-head .useri ul.mobile-dropdown-list li.mobile-qrcode{padding:22px 10px 10px 0;text-align:center;}
+.page-head .useri ul.mobile-dropdown-list li.mobile-qrcode img{width:100px;height:100px;}
+.page-head .useri ul.mobile-dropdown-list li.mobile-qrcode p{line-height:25px;}
+.page-head .useri li:hover ul.mobile-dropdown-list{left:auto;}
+
+.page-head .useri ul li a i.mobile{height:22px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") 5px -205px no-repeat;}
+.page-head .useri ul li:hover a i.mobile{height:25px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -38px -205px no-repeat;}
+.page-head .useri ul li a i.cost{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -1px -24px no-repeat;}
+.page-head .useri ul li:hover a i.cost{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -45px -24px no-repeat;}
+.page-head .useri ul li a i.iprice{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_spt_icon.png") -9px -58px no-repeat;}
+.page-head .useri ul li:hover a i.iprice{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_spt_icon.png") -43px -58px no-repeat;}
+/*.page-head .useri ul li a i.ms{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -1px -102px no-repeat;}
+.page-head .useri ul li:hover a i.ms{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -45px -102px no-repeat;}
+.page-head .useri ul li a #ms-tip{display:none;font-size:12px;border-radius:45%;padding-right:4px;vertical-align:top;background:#FF6574;}*/
+.page-head .useri ul li a i.spt{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -1px -143px no-repeat;}
+.page-head .useri ul li:hover a i.spt{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -45px -143px no-repeat;}
+.page-head .useri ul li i.u-arrow{margin-top:26px;width:15px;height:15px;vertical-align:top;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") 3px 2px no-repeat;}
+.page-head .useri ul li.account-dropdown i.u-arrow{margin-top:26px;width:15px;height:15px;vertical-align:top;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -2px 2px no-repeat;}
+.page-head .useri ul li:hover i.u-arrow{width:15px;height:15px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -40px -179px no-repeat;}
+.page-head .useri ul li.account-dropdown:hover i.u-arrow{width:15px;height:15px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_header_icon.png") -45px -179px no-repeat;}
+.page-head .useri li.spt-dropdown{width:140px;position:relative;}
+.page-head .useri li.spt-dropdown a{padding:0 0 0 15px;}
+.page-head .useri ul.spt-dropdown-list{position:absolute;top:64px;left:-9999px;width:260px;height:160px;list-style-type:none;margin:0;padding:0;z-index:1000;border:1px solid #eee;border-top:0;background:#fff;-webkit-box-shadow:1px 1px 1px #ccc;-moz-box-shadow: 2px 2px 2px;box-shadow: 2px 2px 2px #ccc;}
+.page-head .useri ul.spt-dropdown-list li ul{overflow:hidden;margin:15px 0;padding:0;list-style-type:none;}
+.page-head .useri ul.spt-dropdown-list li ul li{width:129px;height:42px;float:left;text-align:center;}
+.page-head .useri ul.spt-dropdown-list li ul li:hover{border-bottom:0 !important;background-color:#fff;}
+.page-head .useri ul.spt-dropdown-list li ul li.spt-doc{border-right:1px solid #bfbfbf;}
+.page-head .useri ul.spt-dropdown-list li ul li a{margin:0;padding:0;border:none;text-decoration:none;color:#686868;}
+.page-head .useri ul.spt-dropdown-list li ul li a i{display:inline-block;width:25px;height:25px;vertical-align:middle;}
+.page-head .useri ul.spt-dropdown-list li ul li.spt-doc a i{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_spt_icon.png") -9px -3px no-repeat;}
+.page-head .useri ul.spt-dropdown-list li ul li.spt-question a i{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_spt_icon.png") -9px -29px no-repeat;}
+.page-head .useri ul.spt-dropdown-list li ul li a:hover i.doc-icon{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_spt_icon.png") -34px -3px no-repeat;}
+.page-head .useri ul.spt-dropdown-list li ul li a:hover i.question-icon{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_spt_icon.png") -35px -29px no-repeat;}
+.page-head .useri ul.spt-dropdown-list li ul li a:hover p{color:#6dc4f3;}
+.page-head .useri ul.spt-dropdown-list li ul li a p{font-size:12px;margin:0;padding:0;}
+.page-head .useri ul.spt-dropdown-list li.spt-btn{padding-top:16px;text-align:center;}
+.page-head .useri ul.spt-dropdown-list li.spt-btn a.btn{width:225px;height:35px;margin:0;padding:0;line-height:35px;color:#fff;background-color:#5bc0de;border-radius:20px;background-image:none;border: 1px solid transparent;}
+/*.page-head .useri ul.spt-dropdown-list li.spt-btn a.btn:hover{background-color:#39aae7;border-color:#39aae7;}*/
+.page-head .useri ul.spt-dropdown-list li.spt-btn a.btn i{display:inline-block;width:30px;height:25px;vertical-align:middle;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/dashboard_spt_icon.png") -13px -88px no-repeat;}
+.page-head .useri ul.spt-dropdown-list li.spt-btn a.all-workorder{margin:10px 0;padding:0;border:none;font-size:12px;color:#56bbf1;}
+.page-head .useri ul.spt-dropdown-list li.spt-btn a.all-workorder:hover{color:#337ab7;}
+.page-head .useri li:hover ul.spt-dropdown-list{left:auto;right:0;}
+
+
+
+.page-head .useri li.account-dropdown{width:168px;position:relative;}
+.page-head .useri li.account-dropdown a.user-center{display:inline-block;margin:20px 0;height:26px;line-height:26px;padding:0 0 0 20px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.page-head .useri li.account-dropdown i#ms-tip{display:none;font-size:12px;border-radius:50%;margin-top:15px;margin-left:-23px;padding:0px 3px;vertical-align:top;background:#FF6574;font-style:normal;color:#fff;}
+.page-head .useri a.user-center i.level{display:inline-block;width:45px;height:26px;vertical-align:top;}
+.page-head .useri a.user-center i.level1{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") -3px -5px no-repeat;}
+.page-head .useri a.user-center i.level5{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") -3px -90px no-repeat;}
+.page-head .useri a.user-center i.level6{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") -3px -48px no-repeat;}
+.page-head .useri a.user-center i.level7{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") -3px -133px no-repeat;}
+.page-head .useri a.user-center i.level8{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") -3px -175px no-repeat;}
+.page-head .useri a.user-center i.level99{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") -3px -215px no-repeat;}
+.page-head .useri a.user-center span{display:inline-block;width:55px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.page-head .useri ul.account-dropdown-list{position:absolute;top:64px;left:-9999px;width:168px;list-style-type:none;margin:0;padding:0;z-index:1000;outline:1px solid #eee;background:#fff;}
+.page-head .useri ul.account-dropdown-list li{float:none;height:38px;line-height:38px;margin:0;}
+.page-head .useri ul.account-dropdown-list li span.red{color:#f00;}
+.page-head .useri ul.account-dropdown-list li:hover{background:#ebebeb;}
+
+.page-head .useri ul.account-dropdown-list li a{width:150px;max-width:150px;margin:0;padding:0 0 0 20px;color:#686868;border:0;text-decoration:none;}
+.page-head .useri ul.account-dropdown-list li a i.twelve-icon{display:inline-block;width:60px;height:20px;margin-left:3px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/double12.jpg") 0 0 no-repeat;vertical-align:middle;}
+.page-head .useri ul.account-dropdown-list li a img.level-up{padding:0 0 3px 5px;}
+.page-head .useri li:hover ul.account-dropdown-list{left:auto;}
+.page-head .useri li.account-dropdown:hover i.u-arrow{width:15px;height:15px;background:url("//static.sinacloud/.app-stor/static/sinacloud/dashboard_header_icon.png") -40px -179px no-repeat;}
+
+</style>
+<div class="page-head clearfix">
+    <div class="logo-area">
+        <a href="https://www.sinacloud.com/" class="page-logo" title="新浪云"><img src="./controller_files/sinacloud_logo.png"></a>
+    </div>
+    <div class="dashboard">
+        <a class="db-title" href="javascript:void(0)">控制台<i class="head-icon u-arrow"></i></a>
+        <div class="db-dropdown-list">
+            <ul class="db-detail-list">
+                <li><a href="https://sae.sina.com.cn/">云应用 SAE</a></li><li><a href="https://sch.sinacloud.com/">云虚拟主机</a></li><li><a href="https://sae.sina.com.cn/?m=appmarket&a=index">云市场 SAM</a></li><li><a href="https://open.sinastorage.com/?c=console">云存储 SCS</a></li><li><a href="https://live.sinacloud.com/">云直播 SLS</a></li><li><a href="https://sem.sinacloud.com/">云邮箱 SEM</a></li>            </ul>
+        </div>
+    </div>
+    <div class="useri">
+        <!--<div class="u-consult">
+            <i class="phone"></i>
+            <span>400-823-1517</span>
+        </div>-->
+        <ul class="dashboard-nav">
+            <li class="mobile-dropdown nav-li">
+                <a class="app-download" href="https://www.sinacloud.com/sae/index/mobile.html?from=topnav" title="移动客户端"><i class="head-icon mobile"></i>移动客户端</a>
+                <i class="head-icon u-arrow"></i>
+                <ul class="mobile-dropdown-list">
+                    <li class="mobile-tip">
+                        <p>随时随地管理您的应用、了解运行数据、提交工单、掌握账户信息。iOS端充值每次打九折哦。</p>
+                    </li>
+                    <li class="mobile-qrcode">
+                        <img src="./controller_files/sae_app_download.png">
+                        <p>扫一扫下载掌上SAE</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="cost-li nav-li"><a href="https://www.sinacloud.com/ucenter/consume.html?from=topnav" title="消费记录"><i class="head-icon cost"></i>消费记录</a></li>
+            <li class="nav-li"><a target="_blank" href="https://www.sinacloud.com/index/price.html" title="价格"><i class="head-icon iprice"></i>价格</a></li>
+            <!--<li class="ms-li nav-li"><a href="https://www.sinacloud.com/ucenter/message.html?from=topnav" title="消息"><i class="head-icon ms"></i>消息<i id="ms-tip">0</i></a></li>-->
+            <li class="spt-li spt-dropdown nav-li">
+                <a href="https://www.sinacloud.com/index/support.html?from=topnav" title="支持中心" target="_blank"><i class="head-icon spt"></i>支持中心</a>
+                <i class="head-icon u-arrow"></i>
+                <ul class="spt-dropdown-list">
+                    <li>
+                        <ul>
+                            <li class="spt-doc">
+                                <a href="https://www.sinacloud.com/index/support.html">
+                                    <i class="doc-icon"></i>
+                                    <p>文档</p>
+                                </a>
+                            </li>
+                            <li class="spt-question">
+                            <a href="https://www.sinacloud.com/index/support.html#question">
+                                    <i class="question-icon"></i>
+                                    <p>常见问题</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="spt-btn">
+                        <a href="https://www.sinacloud.com/ucenter/workorderadd.html" class="btn btn-info"><i class="workorder"></i>提交工单</a>
+                        <a class="all-workorder" href="https://www.sinacloud.com/ucenter/workorder.html?from=sidebar">&gt;&gt;全部工单</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="account-dropdown nav-li">
+                <a class="user-center" href="https://www.sinacloud.com/ucenter.html?from=topnav" title="用户2392458015">
+                                        <i class="level level1"></i>                    <span>用户</span>
+                </a>
+                <i id="ms-tip" style="display: inline-block;">1</i>
+                <i class="head-icon u-arrow"></i>
+                <ul class="account-dropdown-list">
+                    <li><a href="https://www.sinacloud.com/ucenter.html?from=topnav">用户中心</a></li>
+                    <li><a href="https://www.sinacloud.com/ucenter/message.html?from=sidebar">消息<span class="red" id="ms-li" style="display: inline;">(<span id="ms-num">1</span>)</span></a></li>
+                    <li><a href="https://www.sinacloud.com/ucenter/recharge.html?from=topnav">充值</a></li>
+                    <li>
+                        <a href="https://www.sinacloud.com/ucenter/account.html?from=topnav">普通型                            <img class="level-up" src="./controller_files/level_up_arrow.png" alt="提升">
+                        </a>
+                    </li>
+                    <li><a href="https://www.sinacloud.com/sso/logout.html?callback=https%3A%2F%2Fwww.sinacloud.com%2Fucenter">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 公共顶导：这个文件的静态文件、链接等，必须写成绝对路径，否则可能出现无效链接 -->
+<!--<link rel="stylesheet" type="text/css" href="https://www.sinacloud.com/static/common/css/page_contact.css?v=1.0.15.14">-->
+<style>
+@charset 'utf-8';
+#page-contact-btn{position:fixed;bottom:100px;right:10px;z-index:100;}
+#page-contact-btn a#delete-contact{display:none;position:absolute;top:-16px;right:-10px;}
+#page-contact-btn a#delete-contact img{width:20px;}
+#page-contact-btn:hover a#delete-contact{display:block;}
+#page-contact-btn ul{list-style-type:none;margin:0;}
+#page-contact-btn ul.contact-ul li.contact-li{position:relative;width:54px;height:54px;margin:5px auto;background:#41ade5;list-style-type:none;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;}
+#page-contact-btn ul.contact-ul li.thankful-li{position:relative;width:84px;margin:5px 0;list-style-type:none;}
+#page-contact-btn ul.contact-ul li.thankful-li img{max-width:none;}
+#page-contact-btn ul.contact-ul li.contact-li a.contact-item{display:inline-block;width:54px;height:54px;}
+#page-contact-btn ul.contact-ul li.contact-li a.ent-item{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/page_contact_icon.png") 7px 6px no-repeat;}
+#page-contact-btn ul.contact-ul li.contact-li a.qrcode-item{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/page_contact_icon.png") 6px -60px no-repeat;}
+#page-contact-btn ul.contact-ul li.contact-li a.go-top-item{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/page_contact_icon.png") 6px -126px no-repeat;}
+#page-contact-btn ul.contact-ul li.contact-li .divider{margin:0 10px;width:310px;height:1px;border-top:1px dashed #999;}
+
+#page-contact-btn ul.contact-ul li.contact-li .consult-box{position: absolute;top:-9999px;right:54px;width:350px;height:180px;color:#686868;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/contact_consult_bg.png") no-repeat;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box ul{padding:15px 10px 5px 10px;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box ul li{line-height:23px;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box .consult-btn{position:absolute;top:31px;right:47px;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box .consult-btn a{display:inline-block;width:130px;height:54px;padding:18px 0 18px 18px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/page_contact_button.png") no-repeat;font-size:16px;color:#41ade5;letter-spacing:1px;text-align:center;text-decoration:none;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box .consult-btn a:hover{color:#41ade5;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box p.consult-level{margin-bottom:6px;padding:0 10px;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box p.consult-level a{color:#75bfea;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box p.consult-way{padding:4px 0 0 10px;}
+#page-contact-btn ul.contact-ul li.contact-li .consult-box p.consult-way a{padding-right:15px;}
+#page-contact-btn ul.contact-ul li.ent:hover .consult-box{top:-40px;}
+
+#page-contact-btn ul.contact-ul li.contact-li .ent-box{position: absolute;top:-9999px;right:54px;width:350px;height:180px;color:#686868;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/contact_consult_bg.png") no-repeat;}
+#page-contact-btn ul.contact-ul li.contact-li .ent-box ul{padding:10px 10px 5px 10px;}
+#page-contact-btn ul.contact-ul li.contact-li .ent-box ul li{line-height:23px;}
+#page-contact-btn ul.contact-ul li.contact-li .ent-box ul li.qq a{font-size:13px;}
+#page-contact-btn ul.contact-ul li.contact-li .ent-box ul li.qq a img{margin-top:-5px;}
+#page-contact-btn ul.contact-ul li.contact-li .ent-box p.ent-level{margin-bottom:5px;padding:0 10px;color:#999;}
+#page-contact-btn ul.contact-ul li.contact-li .ent-box p.ent-way{padding:4px 10px;}
+#page-contact-btn ul.contact-ul li.contact-li .ent-box p.ent-way a{padding-right:15px;}
+#page-contact-btn ul.contact-ul li.ent:hover .ent-box{top:-40px;}
+
+#page-contact-btn ul.contact-ul li.contact-li .qrcode-box{position: absolute;top:-9999px;right:45px;;width:150px;height:170px;color:#686868;;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/contact_qrcode_bg.png") no-repeat;}
+#page-contact-btn ul.contact-ul li.contact-li .qrcode-box img{width:119px;height:119px;margin:1px 8px 0 1px;}
+#page-contact-btn ul.contact-ul li.contact-li .qrcode-box p{margin-left:5px;}
+#page-contact-btn ul.contact-ul li.qrcode:hover .qrcode-box{top:-45px;}
+#page-contact-btn ul.contact-ul li.go-top{display:none;}
+
+</style>
+<div id="page-contact-btn">
+    <a id="delete-contact" href="javascript:void(0);"><img src="./controller_files/close_contact.png"></a>
+    <ul class="contact-ul">
+                <li class="contact-li ent">
+            <a class="contact-item ent-item" href="javascript:void(0);"></a>
+                        <div class="consult-box">
+                <ul class="consult-list">
+                    <li>客户经理：暂无</li>
+                    <li>联系电话：暂无</li>
+                    <li>联系邮箱：暂无</li>
+                    <li>在线咨询：暂无</li>
+                </ul>
+                <div class="consult-btn">
+                    <a target="_blank" href="https://www.sinacloud.com/ucenter/account.html?from=sidebar">立即开通</a>
+                </div>
+                <p class="consult-level">升级<a target="_blank" href="https://www.sinacloud.com/index/ent.html?from=float">企业版</a>，获得专属客户经理支持&nbsp;&nbsp;<a target="_blank" href="https://www.sinacloud.com/public/intention.html?from=float">免费咨询</a>
+                </p><div class="divider"></div>
+                <p class="consult-way"><a target="_blank" href="http://saebbs.com/forum.php">社区</a>&nbsp;&nbsp;<a target="_blank" href="https://www.sinacloud.com/ucenter/workorderadd.html?from=sidebar">工单</a>&nbsp;<a target="_blank" href="http://weibo.com/saet">微博</a>商务咨询：010-62676626</p>        </div></li>
+        <li class="contact-li qrcode">
+            <a class="contact-item qrcode-item" href="javascript:void(0);"></a>
+            <div class="qrcode-box">
+                <img src="./controller_files/weixin.png" alt="SinaAppEngine">
+                <p>新浪云微信公众号</p>
+            </div>
+        </li>
+        <li class="contact-li go-top" id="page-go-top" style="bottom: 100px; left: 1312.953125px; display: none;">
+            <a class="contact-item go-top-item" href="javascript:void(0);"></a>
+        </li>
+    </ul>
+</div>
+
+</div>
+<script type="text/javascript" src="./controller_files/sae"></script>
+<script type="text/javascript">
+
+$SAE['dropdown_partiapps'] = false;
+$SAE['dropdown_myapps'] = [{"name":"fu888","ver":"1","cn_name":"fu888"}];
+$SAE['dropdown_myapps_text'] = '我创建的应用';
+$SAE['dropdown_link_m'] = 'vermng';
+$SAE['dropdown_applist_text'] = '应用列表';
+</script>
+<!-- 模块内容:开始 -->
+<div class="row-fluid page-wrap" id="vermng-page">
+    <!-- 侧边栏:开始 -->
+    <div id="app-page">
+    <div class="row">
+        <!--侧边导航栏开始-->
+        <div class="span2" id="sidebar-wrap" style="height: 979px;">
+            <div id="sidebar-new" class="sidebar">
+            <ul class="dropTop"> <a href="https://sae.sina.com.cn/?m=dashboard"><li class="main"><i class="sidebar-back"></i>返回</li> </a><a href="https://sae.sina.com.cn/?m=sum&app_id=fu888&ver="> <li class="main "><i class="sidebar-whole"></i>总览</li> </a> </ul><ul class="dropdown"> <li class="main title_active"> <i class="sidebar-icon0"> </i>应用<span class="newcare up-care"></span></li> <a href="https://sae.sina.com.cn/?m=spackage&app_id=fu888&ver=" style="display:inline;">  <li class="">服务套餐 </li></a><a href="https://sae.sina.com.cn/?m=appmng&app_id=fu888&ver=" style="display:inline;">  <li class="">应用设置 </li></a><a href="https://sae.sina.com.cn/?m=coopmng&app_id=fu888&ver=" style="display:inline;">  <li class="">成员管理 </li></a><a href="https://sae.sina.com.cn/?m=vermng&app_id=fu888&ver=" style="display:inline;">  <li class="active">代码管理 </li></a><a href="https://sae.sina.com.cn/?m=process&app_id=fu888&ver=" style="display:inline;">  <li class="">后台进程 </li></a><a href="https://sae.sina.com.cn/?m=phpinfo&app_id=fu888&ver=" style="display:inline;">  <li class="">环境变量 </li></a><a href="https://sae.sina.com.cn/?m=appconfig&app_id=fu888&ver=" style="display:inline;">  <li class="">AppConfig </li></a><a href="https://sae.sina.com.cn/?m=xhprof&app_id=fu888&ver=" style="display:inline;">  <li class="">XHProf </li></a><a href="https://sae.sina.com.cn/?m=mnglog&app_id=fu888&ver=" style="display:inline;">  <li class="">管理记录 </li></a><a href="https://sae.sina.com.cn/?m=applog&app_id=fu888&ver=" style="display:inline;">  <li class="">日志中心 </li></a><a href="https://sae.sina.com.cn/?m=stat&app_id=fu888&ver=" style="display:inline;">  <li class="">服务状态 </li></a><a href="https://www.sinacloud.com/ucenter/consume/appname/fu888.html" target="_blank" style="display:inline;">  <li class="">资源报表 <i class="sidebar-redirect"></i></li></a><a href="https://sae.sina.com.cn/?m=budget&app_id=fu888&ver=" style="display:inline;">  <li class="">预算设置 </li></a></ul><ul class="dropdown"> <li class="main"> <i class="sidebar-icon1"> </i>数据库与缓存服务<span class="newcare up-care down-care"></span></li> <a href="https://sae.sina.com.cn/?m=rdsmng&app_id=fu888&ver=" style="display:none;">  <li class="">独享型MySQL <font class="recommend-model-notice"></font></li></a><a href="https://sae.sina.com.cn/?m=mysqlmng&app_id=fu888&ver=" style="display:none;">  <li class="">共享型MySQL </li></a><a href="https://sae.sina.com.cn/?m=kv&app_id=fu888&ver=" style="display:none;">  <li class="">KVDB </li></a><a href="https://sae.sina.com.cn/?m=redismng&app_id=fu888&ver=" style="display:none;">  <li class="">Redis </li></a><a href="https://sae.sina.com.cn/?m=mcmng&app_id=fu888&ver=" style="display:none;">  <li class="">Memcached </li></a><a href="https://sae.sina.com.cn/?m=mongodb&app_id=fu888&ver=" style="display:none;">  <li class="">MongoDB </li></a><a href="https://sae.sina.com.cn/?m=elasticsearch&app_id=fu888&ver=" style="display:none;">  <li class="">Elasticsearch <font class="new-model-notice"></font></li></a></ul><ul class="dropdown"> <li class="main"> <i class="sidebar-icon2"> </i>存储与CDN服务<span class="newcare up-care down-care"></span></li> <a href="http://open.sinastorage.com/?c=console" target="_blank" style="display:none;">  <li class="">云存储 <i class="sidebar-redirect"></i></li></a><a href="https://sae.sina.com.cn/?m=storage&app_id=fu888&ver=" style="display:none;">  <li class="">Storage </li></a><a href="https://sae.sina.com.cn/?m=cdn&app_id=fu888&ver=" style="display:none;">  <li class="">CDN </li></a></ul><ul class="dropdown"> <li class="main"> <i class="sidebar-icon3"> </i>应用程序服务<span class="newcare up-care down-care"></span></li> <a href="https://sae.sina.com.cn/?m=cronmng&app_id=fu888&ver=" style="display:none;">  <li class="">定时任务 </li></a><a href="https://sae.sina.com.cn/?m=taskqueue&app_id=fu888&ver=" style="display:none;">  <li class="">任务队列 </li></a><a href="https://sae.sina.com.cn/?m=analysis&app_id=fu888&ver=" style="display:none;">  <li class="">Web性能分析 </li></a></ul><ul class="dropdown"> <li class="main"> <i class="sidebar-icon4"> </i>网络与安全服务<span class="newcare up-care down-care"></span></li> <a href="https://sae.sina.com.cn/?m=cloudbridge&app_id=fu888&ver=" style="display:none;">  <li class="">VPN隧道 </li></a><a href="https://sae.sina.com.cn/?m=ddos&app_id=fu888&ver=" style="display:none;">  <li class="">防火墙 </li></a><a href="https://sae.sina.com.cn/?m=exam&app_id=fu888&ver=" style="display:none;">  <li class="">应用体检 </li></a></ul><ul class="dropdown"> <li class="main"> <i class="sidebar-icon5"> </i>通信服务<span class="newcare up-care down-care"></span></li> <a href="https://sae.sina.com.cn/?m=channel&app_id=fu888&ver=" style="display:none;">  <li class="">Channel </li></a><a href="https://sae.sina.com.cn/?m=newpush&app_id=fu888&ver=" style="display:none;">  <li class="">云推送 </li></a><a href="https://sae.sina.com.cn/?m=newmail&app_id=fu888&ver=" style="display:none;">  <li class="">云邮件 </li></a></ul><ul class="dropdown"> <li class="main"> <i class="sidebar-icon6"> </i>增值服务<span class="newcare up-care down-care"></span></li> <a href="https://sae.sina.com.cn/?m=seg&app_id=fu888&ver=" style="display:none;">  <li class="">分词服务 </li></a></ul><ul class="dropdown"> <li class="main"> <i class="sidebar-icon7"> </i>第三方服务<span class="newcare up-care down-care"></span></li> <a href="https://sae.sina.com.cn/?m=security&app_id=fu888&ver=" style="display:none;">  <li class="">安全防护 </li></a><a href="http://sae.sina.com.cn/?m=bechsms&app_id=fu888&ver=" style="display:none;" target="_blank">  <li class="">短信服务 </li></a><a href="http://sae.sina.com.cn/?m=diantao&app_id=fu888&ver=" style="display:none;" target="_blank">  <li class="">点淘服务 </li></a></ul><ul class="dropdown"> <li class="main"> <i class="sidebar-icon8"> </i>大数据<span class="newcare up-care down-care"></span></li> <a href="https://sae.sina.com.cn/?m=stock&app_id=fu888&ver=" style="display:none;">  <li class="">实时股票查询 </li></a><a href="https://sae.sina.com.cn/?m=histock&app_id=fu888&ver=" style="display:none;">  <li class="">股票历史数据 </li></a></ul>            </div>
+        </div>
+        <div class="span10">
+        <div class="title-box">
+    <!-- <div id="langLogo" class="hide-text php"> -->
+                    <div id="langLogo" class="php">
+                                                    <p class="new-version"> 5.6</p>
+                                                         
+        </div>
+        <ul class="app-choose">
+            <li><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">fu888<b class="caret"></b></a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu">
+                    <li class="first">我的应用</li>
+                                                                                                </ul>
+                            </li>
+            <li>web应用</li>
+        </ul>
+        <ul class="app-profile">
+                        <li class="modify"><span class="label label-success">正常</span></li>
+                        <li class="introduction"></li>
+        </ul>
+    </div>
+        </div>
+        <!--侧边导航栏结束-->
+        <script type="text/javascript" src="./controller_files/sidebar.js"></script>
+<script type="text/javascript">
+//侧边栏数据
+$SAE['APPVERS'] = ["1"];
+$SAE['APPLANG'] = '';
+//$SAE['SIDEBAR'] = null;
+</script>
+    <!-- 侧边栏:结束 -->
+    <script type="text/javascript">
+    $SAE['_login'] =true;
+    $SAE['appname'] = 'fu888';
+    $SAE['app_language'] = 'PHP';
+    $SAE['ver'] =0;
+    $SAE['set_bar'] = '0';
+    $SAE['disp2ul'] = '[1,5,6,7,8]';
+    $SAE['quota_bar_l'] =0;
+    $SAE['upload_url'] = '//sae.sina.com.cn/?m=vermng&a=upload_code';
+    $SAE['session_name'] = 'PHPSESSID';
+    $SAE['session_id'] = 'naor0e18ppiqrlulr71basqif4';
+    $SAE['STATIC_DOMAIN'] = '/static/';
+        $SAE['file_size_limit'] = '100 MB';
+        $SAE['BreadCrumb'] = '["fu888","\u5e94\u7528","\u4ee3\u7801\u7ba1\u7406"]';
+</script>
+
+<!-- 右侧主要内容:开始 -->
+<div class="span10" id="main">
+    <ul class="breadcrumb" id="page-breadcrumb"><li>fu888<span class="divider">»</span></li><li>应用<span class="divider">»</span></li><li class="active">代码管理</li></ul><h2>代码管理</h2>
+    <div class="border-box">
+        <div class="border-box-inner">
+            <div class="svn-create">
+                <strong> <a href="https://sae.sina.com.cn/?m=vermng&app_id=fu888&__r=7CFQKA#CMD:CREATE-VERSION" class=" btn btn-primary" id="create-version">+ 创建新文件</a>  </strong>
+            </div>
+                        <div class="row-fluid progress-bar">
+                                <div class="span12  new-level">
+                    <!-- progress   progress-success quota-l  -->
+                    <div class="" id="disk-space">
+                        <div class="bar bar-success quota-bar" style="width: 0%;"></div>
+                        <span class="usage_hint" id="used">已用：1.4K/5G 
+                        <span class="price_link">[<a href="https://www.sinacloud.com/index/price.html#d9681d05860552e9c3113da381f916fc" target="_blank">价格</a>]</span></span>
+                    </div>
+                    <div class="progress new-space">
+                        <a href="https://sae.sina.com.cn/?m=vermng&app_id=fu888&__r=7CFQKA#" class="cost-space" title="当前用量：1.4K，未超出免费配额">  
+                            <div class="bar bar-danger progress-bar-striped" style="width: 0%;">  </div>
+                        </a>
+                        <div class="free-new" style="left: 2%;"> <span>免费配额</span></div>
+                        <input type="hidden" id="userFree" value="100">
+                    </div>
+                    <div class="pay-ds" id="disk-space" style=" margin-top:-5px;">
+                        <div class="bar bar-success quota-bar" style="width: 0%;"></div>
+                        <div style="float:right;"> <a href="https://www.sinacloud.com/public/intention.html?from=mysql&intention_level=5" target="_blank">升级企业版获得更大空间</a></div>
+                    </div>
+                </div>
+                            </div>
+            <table class="table table-bordered new-mem" id="version-table">
+                <thead class="bread">
+                    <tr>
+                        <th class="set-default code1">文件名</th>
+                        <th class="code2">文件最近修改时间</th>
+                        <th class="app-url code3">文件链接</th>
+                                                
+                       
+                                                                                                <!-- <th class="show-error code6">代码编辑</th>-->
+                                                <th class="extra-opt code7">操作</th>
+                                            </tr>
+                </thead>
+                <tbody>
+                                        <tr data-id="2266551" data-xhprof="0" data-debug="1" data-appname="fu888" data-version="1">
+                        <td>
+                            <span>index.php</span>
+                        </td>
+                        <td>
+                            <span>2017-04-17 09:32:56</span>
+                        </td>
+                        <td class="app-url">
+                                                        <a class="app-url" href="http://1.fu888.applinzi.com/" target="_blank"><code>http://1.fu888.applinzi.com</code></a>
+                                                    </td>
+                                                
+                      
+                                                                        <td class="extra-opt">
+                                                                                            <a href="" class="">编辑此文件代码</a>
+                                                                                    </td>
+                                    </tr>
+                        </tbody>
+        </table>
+            </div>
+</div>
+
+<!--<h2>内容加速</h2>-->
+<!--<div class="border-box" id="cdn_info">-->
+    <div class="border-box-inner">
+        <div class="alert clear-margin">
+                        <p><i class="icon-info-sign"></i><span class="tip">该应用尚未启用CDN服务</span>
+            您可以通过启用CDN，让您的用户获得更快的访问速度。<a href="https://sae.sina.com.cn/?m=cdn&app_id=fu888">  [启动CDN]</a>
+            </p>
+                    </div>
+    </div>
+<h2>SVN仓库信息</h2>
+<div class="row">
+    <div class="span4">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td class="text-right">仓库地址</td>
+                    <td>https://svn.sinacloud.com/fu888</td>
+                </tr>
+                <tr>
+                    <td>用户名</td>
+                    <td>jing888k@163.com</td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td>您的安全密码 <a href="https://www.sinacloud.com/home/index/faq_detail/doc_id/23.html" target="_blank"><i class="icon-question-sign"></i>忘记密码?</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2>代码部署说明</h2>
+<div class="border-box" id="svn-info">
+    <div class="border-box-inner">
+        <ul class="unstyled">
+            <li>首先checkout出fu888的svn仓库。</li>
+            <li>$ svn checkout https://svn.sinacloud.com/fu888</li>
+            <br>
+            <li>进入代码目录，创建一个新的子目录 `1` 作为版本1的代码目录。</li>
+            <li>$ mkdir 1</li>
+            <br>
+            <li>进入版本1的代码目录，编辑代码并版本1的代码部署到线上。</li>
+            <li>$ svn add .</li>
+            <li>$ svn commit -m "make it better"</li>
+            <br>
+                        <li>新浪云支持Git、SVN、代码打包上传三种提交方式，具体请参考：<a href="https://www.sinacloud.com/doc/sae/tutorial/code-deploy.html" target="_blank">https://www.sinacloud.com/doc/sae/tutorial/code-deploy.html</a></li>
+                    </ul>
+    </div>
+</div>
+   
+<script id="pay-box-tpl" type="text/html">
+<div class="modal-body">
+    <p class="alert">为了我们更好的为您提供服务，请完善您的资料。</p>
+    <div class="form-horizontal">
+    <form id="pay-box-form" action="/?m=userlevel&a=es_order" method="post">
+        <input type="hidden" name="ul_module" id="ul_module_id" value="<%=epitm||'detail'%>">
+        <input type="hidden" name="ul_ulevel" id="ul_ulevel_id" value="<%=level||5%>">
+        <div class="control-group">
+            <label class="control-label" for="c-user-name">姓名(*)</label>
+            <div class="controls">
+                <input type="text" id="c-user-name" name="ul_name" placeholder="请输入您的名字" required>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="c-phone">电话(*)</label>
+            <div class="controls">
+                <input type="text" id="c-phone" name="ul_phone" placeholder="请输入您的电话" required>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="c-company">您代表的企业</label>
+            <div class="controls">
+                <input type="text" id="c-company" name="ul_company" placeholder="请输入您代表的企业">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="c-company">升级理由(*)</label>
+            <div class="controls">
+                <textarea class="textarea" id="c-company" name="ul_reason" placeholder="请输入您的升级理由" required minlength="20"></textarea>
+                <span class="label label-warning" id="c-company-info">20字以上</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="c-vcode">验证码</label>
+            <div class="controls">
+                <input type="text" name="ul_vcode" value="" required>
+                <img src="/vc.php?k=ul_vcode" id="ul_vcode_img" class="vcimg vcode_img" data-vcode-name="ul_vcode"/>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn close-btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+    <button class="btn btn-primary" id="next-step" data-cmd="NEXT-TO-COPINFO">下一步</button>
+</div>
+</script>
+<script>
+(function($){
+    $(document).ready(function(e){
+        var $C = $SAETOOLS.getController();
+        //完善资料模板初始化
+        $('#pay-box-tpl').created(function(e, modal, data){
+            $('#pay-box-form').validation().ajaxForm(function(data){
+                if(this.code == 200)
+                {
+                    window.location.href = '/?m=userlevel&lv=' + $('#ul_ulevel_id').val() + "&epitm=" + $('#ul_module_id').val() + "&uloid=" + data.info_id; 
+                }
+                else
+                {
+                    $C.popup(null, null, null, null, {closeToParent:true}); 
+                }
+            });
+            $('#ul_vcode_img').on('click', function(e){
+                var vcodeName = $(e.target).data('vcode-name');
+                e.target.src = "/vc.php?r=" + $SAETOOLS.RandomChars(10, 'NUMBER') + (vcodeName ? '&k=' + vcodeName : ''); 
+            });
+        });
+
+        //下一步
+        $C.registerCmd('NEXT-TO-COPINFO', function(e){
+            $('#pay-box-form').trigger('submit');
+        });
+    });
+})(jQuery);
+</script>
+</div>
+<!-- 统计内容:结束-->
+<script type="text/html" id="create_version_tpl">
+<div class="modal-body">
+<div class="form-inline">
+    请输入版本号（数字）： 
+    <input type="text" class="text" style="width:80px;" value="" id="input_version" name="input_version" /> 
+    <input type="button" class="button btn" value="创建" data-cmd="SUBMIT-CREATE-VERSION" />
+</div>
+</div>
+</script>
+<script type="text/html" id="upload_code_tpl">
+<div class="modal-body">
+            <p>只支持上传zip、 gz、tar.gz三种代码包，文件大小不能超过200MB，同名文件将会被覆盖。</p>
+        <p>上传后的目录结构将跟压缩包内的目录结构保持一致。</p>
+        <p>如果压缩包中包含有中文文件名的文件，请使用utf8编码，否则会上传失败。</p>
+        <input type="hidden" class="file" value=""/>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn close-btn" data-dismiss="modal" aria-hidden="true" data-cmd="CLOSE-UPLOADCODE-MODAL">关闭</button>
+</div>
+</script>
+<script id="clear_cdn_modal" type="text/html">
+<div class="modal-body">
+    <div class="control-group">
+        <div class="controls">
+            <textarea class="textarea" id="urls" placeholder="请输入文件的URL，每行一个" rows="16" name="urls"></textarea>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+    <button class="btn btn-primary" id="clear_cdn_btn" data-cmd="SUBMIT-CLEAR-CDN">清除CDN缓存</button>
+</div>
+</script>
+
+<script type="text/html" id="expansion_box">
+    <div class="box_container modal-body">
+        <div class="expansion-box-info">建议将图片、视频、音频等静态文件存放在Storage中，可以节省大量代码空间。</div>
+        <p class="storage-url"><a href="//www.sinacloud.com/doc/sae/php/storage.html#storage">查看storage使用说明</a></p>
+        <div class="choose_quota">
+            如果代码空间仍不能满足您的需求，请选择代码空间上限容量，进行扩容        </div>
+
+        <div class="expansion_bar_wpr clearfix">
+            <div id="lv_bar_1" class="expansion_bar float_l"></div>
+            <div id="lv_bar_2" class="expansion_bar float_l"></div>
+            <div id="lv_bar_3" class="expansion_bar float_l"></div>
+            <div id="lv_bar_4" class="expansion_bar float_l"></div>
+        </div>
+
+        <div class="expansion_radios form-inline">
+            <input id="ul_level_1" name="ul_level" type="radio"/>
+            <label for="ul_level_1">5G</label>
+            <input id="ul_level_2" name="ul_level" type="radio"/>
+            <label for="ul_level_2">5G</label>
+            <input id="ul_level_3" name="ul_level" type="radio"/>
+            <label for="ul_level_3">5G</label>
+            <input id="ul_level_4" name="ul_level" type="radio"/>
+            <label for="ul_level_4">自定义</label>
+        </div>
+    </div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary button ul_buy" data-epitm="code" data-lv="1" id="expansion_now">扩容</button>
+    <button type="button" class="btn close-btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+</div>
+</script>
+<script id="modal-grade" type="text.html">
+    <div class="modal-body">
+        <div id="grade-control">
+            <p>
+            您的代码空间为5G，超过<span class="user-free "></span>免费配额部分按5云豆/M/天计费。提升账户等级可获得更大免费空间及更多权益，具体标准请参考<a href="//www.sinacloud.com/index/price.html#level">账户等级说明</a>。
+            </p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="//www.sinacloud.com/ucenter/account.html" class="btn btn-primary">升级</a>
+        <button type="button" class="btn close-btn" data-dismiss="modal" aria-hidden="true">取消</button>
+    </div>
+</script>
+</div>
+<!-- 模块内容:结束 -->
+
+<script type="text/javascript" src="./controller_files/saved_resource(3)"></script>
+
+<script type="text/javascript" src="./controller_files/sinacloud_sso.js"></script>
+<div style="display:none;">
+<!--<script src="https://s4.cnzz.com/z_stat.php?id=1253275838&web_id=1253275838" language="JavaScript"></script>-->
+<script>
+// reset sidebar height
+$(document).ready(function () {
+    if ($('#sidebar-wrap').length) {
+        $('#sidebar-wrap').height(($(document.body).height() > $(document).height()) ? ($('body').height() - $('#top_header').height()) : ($(document).height() - $('#top_header').height()));
+    }
+});
+</script>
+</div>
+
+
+</div></div><iframe src="./controller_files/saved_resource(4).html" scrolling="no" width="0" height="0" style="display: none;"></iframe></body></html>

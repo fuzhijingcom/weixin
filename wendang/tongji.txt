@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN" xml:lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+</head>
+<title>我的公众号访客点击统计结果</title>
+<body>
+<?php
+$uid =  basename(dirname(__FILE__));
+
+$dir = "/home/wwwroot/".$_SERVER['SERVER_NAME']."/uid/".$uid."/";
+
+$openid = array();
+if (is_dir($dir)) {
+    if ($dh = opendir($dir)) {
+        while (($file = readdir($dh)) !== false) {
+            $filetype = strstr($file, '.'); //参数为空, 返回查找值.之后
+            if($filetype == '.txt'){
+            $filename = strstr($file, '.', TRUE); //参数设定true, 返回查找值.之前的前面部分
+            if($filename !== '' and $filename !== 'log' ){
+                $file_path = "/home/wwwroot/".$_SERVER['SERVER_NAME']."/uid/".$uid."/".$filename.".txt";
+                $cishu = file_get_contents($file_path);
+                $openid[$filename] = $cishu;
+            }
+            } 
+        } 
+        closedir($dh);
+    }
+}
+echo '<table border="1" width="400" align="left">';
+echo '<caption><h1>访客点击数据统计</h1></caption>';
+echo '<tr bgcolor="#dddddd">';
+echo '<th>访客的openid</th><th>点击次数</th>';
+echo '</tr>';
+foreach ($openid as $key=>$value)
+{
+    echo '<tr>';
+    echo '<td>'.$key.'</td><td>'.$value.'</td>';
+    echo '</tr>';
+}
+echo '</table>';
+?>
+</body>
+</html>

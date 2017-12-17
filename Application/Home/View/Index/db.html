@@ -1,0 +1,312 @@
+<include file="Index/header" />
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/controller_files/saved_resource">        
+  
+ <script src="__PUBLIC__/jquery-1.7.1.js" type="text/javascript"></script>
+
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="/static/css/v2/ie9.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="/static/css/v2/ie8.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/static/css/v2/ie7.css"/>
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="/static/css/v2/ie6.css"/>
+    <![endif]-->
+
+</head>
+<body id="body" class="vermng">
+
+<!--头部导航-->
+<div id="top_header"><!-- 公共顶导：这个文件的静态文件、链接等，必须写成绝对路径，否则可能出现无效链接 -->
+ <include file="Index/style" />
+
+<script type="text/javascript">
+$(function () {
+    $("#txtShow").click(function () {
+        $("#divShade").show();
+        funShowDivCenter("#div_show");
+        $("#txtSiteID").focus();
+    });
+    $("#btnCancel").click(function () {
+        $("#divShade").hide();
+        $("#div_show").hide();
+    });
+    
+    $("#btnOK").click(function(){
+        var filename = $("input[name='filename']").val();
+        location.href = "addfile?filename="+filename;//location.href实现客户端页面的跳转 
+      
+    }); 
+    
+    
+    $("#createShow").click(function () {
+    	if($("#create_db_img").css('display') == 'none'){
+        $("#create_db_img").show();
+    	}else{
+    		$("#create_db_img").hide();
+    	}
+       
+    });
+    
+    
+});
+
+//让指定的DIV始终显示在屏幕正中间
+function funShowDivCenter(div) {
+    var top = ($(window).height() - $(div).height()) / 2;
+    var left = ($(window).width() - $(div).width()) / 2;
+    var scrollTop = $(document).scrollTop();
+    var scrollLeft = $(document).scrollLeft();
+    $(div).css({ position: 'absolute', 'top': top + scrollTop, left: left + scrollLeft }).show();
+}
+</script>
+<div id="divShade" class="shade"></div>
+    
+    <div id="div_show">
+       <div class="content">
+          <div><label>文件名：</label><input id="txtSiteID" type="text" name="filename"/>.php</div>
+       </div>
+       <div class="footer">
+          <input id="btnOK" type="button" value="确定" /><input id="btnCancel" type="button" value="取消" />
+       </div>
+</div>
+    
+    
+<div class="page-head clearfix">
+    <div class="logo-area">
+        <a href="http://weixin.yudw.com/home/index/controller" class="page-logo" title="新浪云">
+        <img src="__PUBLIC__/controller_files/sinacloud_logo.png"></a>
+    </div>
+    <div class="dashboard">
+        <a class="db-title" href="javascript:void(0)">控制台<i class="head-icon u-arrow"></i></a>
+        <div class="db-dropdown-list">
+            <ul class="db-detail-list">
+                <li><a href="http://weixin.yudw.com/home/index/controller">云应用 SAE</a></li>
+                
+  			</ul>
+        </div>
+    </div>
+    <div class="useri">
+        <!--<div class="u-consult">
+            <i class="phone"></i>
+            <span>400-823-1517</span>
+        </div>-->
+        <ul class="dashboard-nav">
+            <li class="mobile-dropdown nav-li">
+                <a class="app-download" href="__CONTROLLER__/" title="咨询">
+                <i class="head-icon mobile"></i>咨询</a>
+                <i class="head-icon u-arrow"></i>
+                <ul class="mobile-dropdown-list">
+                    <li>
+                        <img src="__PUBLIC__/me.jpg">
+                    </li>
+                </ul>
+            </li>
+
+            <li class="spt-li spt-dropdown nav-li">
+                <a href="__CONTROLLER__/index/support.html?from=topnav" title="用户中心" target="_blank">
+                <i class="head-icon spt"></i>用户中心</a>
+                <i class="head-icon u-arrow"></i>
+                <ul class="spt-dropdown-list">
+                    <li>
+                        <ul>
+                            <li class="spt-doc">
+                                <a href="__CONTROLLER__/">
+                                    <i class="doc-icon"></i>
+                                    <p>文档</p>
+                                </a>
+                            </li>
+                            <li class="spt-question">
+                            <a href="__CONTROLLER__/">
+                                    <i class="question-icon"></i>
+                                    <p>常见问题</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="spt-btn">
+                        <a href="__CONTROLLER__/logout" class="btn btn-info"><i class="workorder"></i>退出登录</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div id="page-contact-btn">
+    <a id="delete-contact" href="javascript:void(0);"><img src="__PUBLIC__/controller_files/close_contact.png"></a>
+    <ul class="contact-ul">
+               
+        <li class="contact-li qrcode">
+            <a class="contact-item qrcode-item" href="javascript:void(0);"></a>
+            <div class="qrcode-box">
+                <img src="__PUBLIC__/me.jpg" alt="SinaAppEngine">
+                <p>有问题？找TA</p>
+            </div>
+        </li>
+        <li class="contact-li go-top" id="page-go-top" style="bottom: 100px; left: 1312.953125px; display: none;">
+            <a class="contact-item go-top-item" href="javascript:void(0);"></a>
+        </li>
+    </ul>
+</div>
+
+</div>
+
+<!-- 模块内容:开始 -->
+<div class="row-fluid page-wrap" id="vermng-page">
+    <!-- 侧边栏:开始 -->
+    <div id="app-page">
+    <div class="row">
+        <!--侧边导航栏开始-->
+        
+         <include file="Index/left" />
+        
+        <div class="span10">
+        <div class="title-box">
+                   
+        <ul class="app-choose">
+            <li><a class="dropdown-toggle" data-toggle="dropdown" href="http://weixin.yudw.com/home/index/controller">{$controller_name}</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu">
+                    <li class="first">我的应用</li>
+                                                                                                </ul>
+                            </li>
+            <li>web应用</li>
+        </ul>
+        <ul class="app-profile">
+                        <li class="modify"><span class="label label-success">正常（永久有效）</span></li>
+                        <li class="introduction"></li>
+        </ul>
+    </div>
+        </div>
+        <!--侧边导航栏结束-->
+        <script type="text/javascript" src="__PUBLIC__/controller_files/sidebar.js"></script>
+
+
+<!-- 右侧主要内容:开始 -->
+<div class="span10" id="main">
+    <div class="border-box">
+        <div class="border-box-inner">
+            <div class="svn-create">
+                <strong> <a id="createShow" class=" btn btn-primary" >+ 创建商品列表 -- 教程</a> </strong> 
+                <if condition=" $product_table eq 0">
+    			<font color="red" size="4">《 —— 点击左边，查看教程，运行下面语句，进行创建商品列表</font>
+<br><br>
+    						 <else />
+    						<font color="red">你已经创建了，不能重复创建</font>
+    						 <br><br>
+    						 
+    						 </if> 
+            </div>
+            
+          
+            
+                        <div class="row-fluid progress-bar">
+                                <div class="span12  new-level">
+                    <!-- progress   progress-success quota-l  -->
+                   
+                   
+                    <div class="pay-ds" id="disk-space" style=" margin-top:-5px;">
+                        <div class="bar bar-success quota-bar" style="width: 0%;"></div>
+                        <div style="float:right;"> <a href="__CONTROLLER__/public/intention.html?from=mysql&intention_level=5" target="_blank">升级企业版获得更大空间</a></div>
+                    </div>
+                </div>
+                            </div>
+                            <div id="create_db_img" style="display:none;">
+                            <h2>1.首先创建数据表，如图</h2>
+                            <img src="__PUBLIC__/create_db.png">
+                            <h2>2.SQL语句如下</h2>
+                            <font color="red">CREATE TABLE `weixin`.`pre_1` ( `id` INT NOT NULL AUTO_INCREMENT COMMENT '商品ID' , `name` VARCHAR(30) NOT NULL COMMENT '商品名称' , `description` VARCHAR(255) NOT NULL COMMENT '商品描述' , `price` DECIMAL(10,2) NOT NULL DEFAULT '0.00' COMMENT '商品价格' , PRIMARY KEY (`id`)) ENGINE = MyISAM CHARACTER SET utf8 COLLATE utf8_general_ci;
+    						</font>
+    						<br><br>
+    						<if condition=" $product_table eq 0">
+    						<form method="post">
+    						 <button type="submit" class=" btn btn-primary" >运行该语句进行创建我的商品列表</button><font color="red" size="4"> 点击左边按钮，运行SQL语句，进行创建商品列表</font>
+    						 </form> 
+    						 <br><br>
+    						 <else />
+    						  <a  class=" btn btn-primary" >你已经创建了，不能重复创建</a> <font color="red">你已经创建了，不能重复创建</font>
+    						 <br><br>
+    						 
+    						 </if>
+    						
+    						 <img src="__PUBLIC__/create_db_sql.png">
+    						
+                            </div>
+                            
+                            	<if condition=" $product_table eq 0">
+                            	<h1>请先创建数据表</h1>
+                            	 <else />
+              <div class="svn-create"><a href="__CONTROLLER__/add">
+              <h1>进入phpMyAdmin管理数据</h1>
+              <img src="__PUBLIC__/add_table_files/logo_left.png" width="450px"></a>
+               </if>
+            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+        <div id="showtable" style="display:none;">
+            <table class="table table-bordered new-mem" id="version-table">
+                <thead class="bread">
+                    <tr>
+                        <th class="set-default code1">图片名</th>
+                        <th class="code2">文件最近修改时间</th>
+                        <th class="app-url code3">图片链接</th>
+                                                
+                       
+                        <!-- <th class="show-error code6">代码编辑</th>-->
+                         <th class="extra-opt code7">操作</th>
+                     </tr>
+                </thead>
+                <tbody>
+                      <foreach item="v" name="alltable">
+                      <tr data-id="2266551" data-xhprof="0" data-debug="1" data-appname="fu888" data-version="1">
+                        <td>
+                            <span>{$v.file_name}.php</span>
+                        </td>
+                        <td>
+                            <span>{$v.update_time}</span>
+                        </td>
+                        <td class="app-url">
+                        <a class="app-url" href="http://weixin.yudw.com/uid/{$controller_id}/{$v.file_name}.php" target="_blank"><code>http://weixin.yudw.com/uid/{$controller_id}/{$v.file_name}.php</code></a>
+                        </td>
+                                                
+                      
+                       <td class="extra-opt">
+                        <a href="__CONTROLLER__/images/img_id/{$v._id}" class="">删除该图片</a>
+                        </td>
+                      </tr>
+                      
+                      </foreach>
+                      
+                      
+                        </tbody>
+        </table>
+        
+        </div>
+            </div>
+</div>
+
+   
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div></div>
+
+</body></html>

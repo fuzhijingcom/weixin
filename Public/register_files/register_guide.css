@@ -1,0 +1,198 @@
+@charset 'utf-8';
+.steps {
+  overflow: hidden;
+  width: 100%;
+  padding-left: 0;
+  list-style-type: none; }
+
+.steps a {
+  padding: 8px 10px 8px 25px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  background: white;
+  width: auto;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC; }
+  .steps a:hover {
+    background-color: #E6E6E6;
+    border-top: 1px solid #ADADAD;
+    border-bottom: 1px solid #ADADAD; }
+    .steps a:hover::after {
+      border-left-color: #E6E6E6; }
+  .steps a::after, .steps a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -19px;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 1em solid;
+    right: -1em;
+    border-left-color: black; }
+  .steps a::after {
+    z-index: 2;
+    border-left-color: white; }
+
+.steps li:first-child a {
+  padding-left: 10px;
+  border-left: 1px solid #CCC;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px; }
+
+.steps .step-info:first-child a {
+  border-left: 1px solid #46b8da; }
+  .steps .step-info:first-child a:hover {
+    border-left: 1px solid #269abc; }
+.steps .step-info a {
+  background: #5bc0de;
+  color: white;
+  border-top: 1px solid #46b8da;
+  border-bottom: 1px solid #46b8da; }
+  .steps .step-info a::after {
+    border-left-color: #5bc0de; }
+  .steps .step-info a:hover {
+    background: #31b0d5;
+    border-top: 1px solid #269abc;
+    border-bottom: 1px solid #269abc; }
+    .steps .step-info a:hover::after {
+      border-left-color: #31b0d5; }
+
+.steps .step-success:first-child a {
+  border-left: 1px solid #4cae4c; }
+  .steps .step-success:first-child a:hover {
+    border-left: 1px solid #398439; }
+.steps .step-success a {
+  background: #5cb85c;
+  color: white;
+  border-top: 1px solid #4cae4c;
+  border-bottom: 1px solid #4cae4c; }
+  .steps .step-success a::after {
+    border-left-color: #5cb85c; }
+  .steps .step-success a:hover {
+    background: #449d44;
+    border-top: 1px solid #398439;
+    border-bottom: 1px solid #398439; }
+    .steps .step-success a:hover::after {
+      border-left-color: #449d44; }
+
+.steps .step-danger:first-child a {
+  border-left: 1px solid #d43f3a; }
+  .steps .step-danger:first-child a:hover {
+    border-left: 1px solid #ac2925; }
+.steps .step-danger a {
+  background: #d9534f;
+  color: white;
+  border-top: 1px solid #d43f3a;
+  border-bottom: 1px solid #d43f3a; }
+  .steps .step-danger a::after {
+    border-left-color: #d9534f; }
+  .steps .step-danger a:hover {
+    background: #c9302c;
+    border-top: 1px solid #ac2925;
+    border-bottom: 1px solid #ac2925; }
+    .steps .step-danger a:hover::after {
+      border-left-color: #c9302c; }
+
+.steps .step-primary:first-child a {
+  border-left: 1px solid #357ebd; }
+  .steps .step-primary:first-child a:hover {
+    border-left: 1px solid #285e8e; }
+.steps .step-primary a {
+  background: #428bca;
+  color: white;
+  border-top: 1px solid #357ebd;
+  border-bottom: 1px solid #357ebd; }
+  .steps .step-primary a::after {
+    border-left-color: #428bca; }
+  .steps .step-primary a:hover {
+    background: #3071a9;
+    border-top: 1px solid #285e8e;
+    border-bottom: 1px solid #285e8e; }
+    .steps .step-primary a:hover::after {
+      border-left-color: #3071a9; }
+
+.steps .disabled a {
+  pointer-events: none;
+  color: #CCC; }
+
+/*# sourceMappingURL=style.css.map */
+.reg_info {
+    border-right:1px solid #ccc;
+}
+.reg_content {
+    min-height: 300px;
+}
+
+/*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks reading the docs.
+ * Requires a base and modifier class.
+ */
+
+/* Common styles for all types */
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  border-radius: 3px;
+}
+
+/* Tighten up space between multiple callouts */
+.bs-callout + .bs-callout {
+  margin-top: -5px;
+}
+
+/* Variations */
+.bs-callout-danger {
+  border-left-color: #ce4844;
+}
+.bs-callout-danger h4 {
+  color: #ce4844;
+}
+.bs-callout-warning {
+  border-left-color: #aa6708;
+}
+.bs-callout-warning h4 {
+  color: #aa6708;
+}
+.bs-callout-info {
+  border-left-color: #1b809e;
+}
+.bs-callout-info h4 {
+  color: #1b809e;
+}
+.bs-callout-success {
+  border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+  color: #5cb85c;
+}
+.bottom-line {
+    border-bottom: 1px dotted #ccc;
+}
+.step-detail {
+    margin-left: 15px;
+}
+.help h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.register-guide-title {
+    margin-top:20px;
+    margin-bottom:20px;
+}

@@ -1,0 +1,24 @@
+[ 2017-06-21T10:45:16+08:00 ] 61.145.106.5 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002488s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-06-21T10:45:27+08:00 ] 61.145.106.5 /Public/image/up_down_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-21T10:47:23+08:00 ] 61.145.106.5 /Public/image/up_down_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-21T10:47:34+08:00 ] 61.145.106.5 /Public/image/up_down_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+ERR: 无法加载模块:Public
+

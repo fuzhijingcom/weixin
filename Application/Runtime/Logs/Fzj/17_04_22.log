@@ -1,0 +1,9 @@
+[ 2017-04-22T05:53:56+08:00 ] 101.226.64.174 /fzj?signature%3D17422e992c445d9047cc3f81afb282b2f85fa79e%26timestamp%3D1492761797%26nonce%3D1510028454%26openid%3DoHCi1wpPSmvwMkjX2pPtAr-ARfV8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 36 行.
+

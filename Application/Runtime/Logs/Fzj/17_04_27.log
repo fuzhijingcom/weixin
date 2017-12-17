@@ -1,0 +1,116 @@
+[ 2017-04-27T00:10:39+08:00 ] 182.254.86.155 /fzj?signature=5c2b86ee66c3f83ec41c6cdc11825bbccee07305&timestamp=1493223038&nonce=805981122&openid=oHCi1wjWiVhgAXTNx0FJ5IKBBMa0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-04-27T00:10:45+08:00 ] 182.254.86.145 /fzj?signature=2d89c26d410f8eba9c66c57429d23c815f912690&timestamp=1493223044&nonce=2102763&openid=oHCi1wjWiVhgAXTNx0FJ5IKBBMa0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `pre_wx` [ RunTime:0.0007s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wjWiVhgAXTNx0FJ5IKBBMa0' ) LIMIT 1   [ RunTime:0.0613s ]
+SQL: INSERT INTO `weixin`.`pre_wx` ( `openid`, `cishu`) VALUES ( 'oHCi1wjWiVhgAXTNx0FJ5IKBBMa0', '1'); [ RunTime:0.0496s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wjWiVhgAXTNx0FJ5IKBBMa0' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] fopen(/home/wwwroot/weixin.yudw.com/ThinkPHP//Conf/access_token.txt): failed to open stream: Permission denied /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 618 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 619 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 620 行.
+ERR: 无法加载控制器:Index
+
+[ 2017-04-27T00:10:48+08:00 ] 182.254.86.148 /fzj?signature=35ff4bc0367eb4dee1e5ba6be3f53a55a7a48ae2&timestamp=1493223047&nonce=1041879273&openid=oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `pre_wx` [ RunTime:0.0005s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pre_wx` SET `cishu`=cishu+1 WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) [ RunTime:0.0002s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen(/home/wwwroot/weixin.yudw.com/ThinkPHP//Conf/access_token.txt): failed to open stream: Permission denied /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 618 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 619 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 620 行.
+ERR: 无法加载控制器:Index
+
+[ 2017-04-27T00:10:48+08:00 ] 101.226.66.173 /fzj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 36 行.
+
+[ 2017-04-27T00:10:51+08:00 ] 182.254.86.140 /fzj?signature=2541e24040dbdbbef97f16ea9bbe9c2be47363c0&timestamp=1493223050&nonce=1980802837&openid=oHCi1wjWiVhgAXTNx0FJ5IKBBMa0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `pre_wx` [ RunTime:0.0005s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wjWiVhgAXTNx0FJ5IKBBMa0' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pre_wx` SET `cishu`=cishu+1 WHERE ( openid='oHCi1wjWiVhgAXTNx0FJ5IKBBMa0' ) [ RunTime:0.0002s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wjWiVhgAXTNx0FJ5IKBBMa0' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen(/home/wwwroot/weixin.yudw.com/ThinkPHP//Conf/access_token.txt): failed to open stream: Permission denied /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 618 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 619 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 620 行.
+ERR: 无法加载控制器:Index
+
+[ 2017-04-27T00:10:51+08:00 ] 182.254.86.148 /fzj?signature=a955d18e73ae17b4a2b09be86fed01e6989c53af&timestamp=1493223050&nonce=744887268&openid=oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `pre_wx` [ RunTime:0.0005s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `pre_wx` SET `cishu`=cishu+1 WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) [ RunTime:0.0002s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen(/home/wwwroot/weixin.yudw.com/ThinkPHP//Conf/access_token.txt): failed to open stream: Permission denied /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 618 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 619 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 620 行.
+ERR: 无法加载控制器:Index
+
+[ 2017-04-27T02:50:31+08:00 ] 112.90.82.218 /fzj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 36 行.
+
+[ 2017-04-27T09:44:19+08:00 ] 182.254.86.148 /fzj?signature=c609eeee6581967fe683e5317ff50895feedb9a4&timestamp=1493257458&nonce=1348278819&openid=oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `pre_wx` [ RunTime:0.0005s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `pre_wx` SET `cishu`=cishu+1 WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) [ RunTime:0.0002s ]
+SQL: SELECT `cishu` FROM `pre_wx` WHERE ( openid='oHCi1wlUdN1Nd2-HBr2Mnc8tg40Y' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] fopen(/home/wwwroot/weixin.yudw.com/ThinkPHP//Conf/access_token.txt): failed to open stream: Permission denied /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 618 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 619 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 620 行.
+ERR: 无法加载控制器:Index
+
+[ 2017-04-27T11:56:33+08:00 ] 183.57.53.197 /fzj?signature%3Dc609eeee6581967fe683e5317ff50895feedb9a4%26timestamp%3D1493257458%26nonce%3D1348278819%26openid%3DoHCi1wlUdN1Nd2-HBr2Mnc8tg40Y
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/IndexController.class.php 第 36 行.
+

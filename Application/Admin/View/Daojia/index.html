@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>管理中心 </title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/style.css">
+		<!-- jQuery file -->
+		<script src="__PUBLIC__/admin/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/admin/js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+	</head>
+	<body>
+		<div id="panelwrap">
+
+			<div class="header">
+				<div class="title">
+					<a href="#">【到家】后台管理系统</a>
+				</div>
+
+				<div class="header_right">
+					{$admin_username}(管理员)
+					<input value="管理员" id="UType" type="hidden">
+					<!-- <a href="#" class="settings">Settings</a> -->
+					<a href="__CONTROLLER__/logout" class="logout">退出</a>
+				</div>
+
+				<div class="menu">
+					<ul>
+						<li>
+							<a  href="" class="selected">商品管理</a>
+						</li>
+						
+						
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="submenu">
+				<ul>
+					<!--<li>
+						<a href="#" class="selected">settings</a>
+					</li>-->
+					<li>
+						<a href="__CONTROLLER__/add"  class="selected">添加商品信息</a>
+					</li>
+					
+				</ul>
+			</div>
+
+<div class="center_content">
+	<div id="right_wrap">
+		<div id="right_content" class="align_center">
+			<div id="right_top">
+				<div class="top_title">
+					<h2>
+						<div id="title_left">
+							会员信息
+						</div>
+					</h2>
+				</div>
+				<table id="rounded-corner">
+					<thead>
+						<tr >
+							<th>
+								会员姓名
+							</th>
+							<th>
+								性别
+							</th>
+							<th>
+								院系专业班级
+							</th>
+							<th>
+							    入会时间
+							</th>
+							<th>
+								会费缴纳情况
+							</th>
+							<th>
+								所属社团
+							</th>
+							<th>
+								操作
+							</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td colspan="12">
+								版权所有：驿源科技
+							</td>
+						</tr>
+					</tfoot>
+					<tbody>
+							
+							<tr class="odd">
+								
+								<td>
+									张三
+								</td>
+								<td>
+									男
+								</td>
+								<td>
+									计算机系
+								</td>
+								<td>
+									2015-10-31
+								</td>
+								<td>
+									年已交
+								</td>
+								<td>
+									华工计算机社团
+								</td>
+								<td>
+									<a class="view"  href="#" title="查看">&nbsp;</a>
+									<a class="edit"  href="#" title="修改">&nbsp;</a>
+									<a class="del"   href="#" title="删除">&nbsp;</a>
+								</td>
+								
+							</tr>
+		
+							<tr class="even">
+							
+								<td>
+									王一
+								</td>
+								<td>
+									女
+								</td>
+								<td>
+									计算机系
+								</td>
+								<td>
+									2015-10-31
+								</td>
+								<td>
+									未交
+								</td>
+								<td>
+									广工计算机社团
+								</td>
+								
+								<td>
+									<a class="view"  href="#"  title="查看">&nbsp;</a>
+									<a class="edit"  href="#"  title="修改">&nbsp;</a>
+									<a class="del"   href="#"  title="删除">&nbsp;</a>
+								</td>
+								
+							</tr>
+								
+					</tbody>
+				</table>
+			</div>
+
+	
+		</div>
+	</div>
+	<!-- end of right content-->
+    
+	<div class="clear"></div>
+</div>
+<!--end of center_content-->
+
+    
+	<div class="footer">
+		
+	</div>
+		
+</div>    
+		
+</body>
+</html>

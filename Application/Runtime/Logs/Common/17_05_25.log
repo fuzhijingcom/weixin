@@ -1,0 +1,72 @@
+[ 2017-05-25T14:20:13+08:00 ] 5.255.253.53 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+ERR: 无法加载模块:Robots
+
+[ 2017-05-25T16:27:32+08:00 ] 61.145.106.6 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-05-25T16:27:33+08:00 ] 61.145.106.6 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-05-25T16:27:37+08:00 ] 61.145.106.6 /Public/image/up_down_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-25T16:27:39+08:00 ] 61.145.106.6 /Public/image/up_down_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-25T16:28:01+08:00 ] 61.145.106.6 /Public/img/glyphicons-halflings.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-25T16:28:01+08:00 ] 61.145.106.6 /static/image/sidebar-icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+ERR: 无法加载模块:Static
+
+[ 2017-05-25T16:36:30+08:00 ] 61.145.106.6 /static/image/sidebar-icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Static
+
+[ 2017-05-25T16:36:30+08:00 ] 61.145.106.6 /Public/img/glyphicons-halflings.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-25T16:37:07+08:00 ] 61.145.106.6 /static/image/sidebar-icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+ERR: 无法加载模块:Static
+
+[ 2017-05-25T16:37:07+08:00 ] 61.145.106.6 /Public/img/glyphicons-halflings.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-25T16:48:45+08:00 ] 61.145.106.6 /Public/image/up_down_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,14 @@
+[ 2017-06-19T08:32:14+08:00 ] 183.57.53.197 /fzj/conf/create_menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+NOTIC: [2] fopen(/home/wwwroot/weixin.yudw.com/ThinkPHP//Conf/access_token.txt): failed to open stream: Permission denied /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/ConfController.class.php 第 269 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/ConfController.class.php 第 270 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /home/wwwroot/weixin.yudw.com/Application/Fzj/Controller/ConfController.class.php 第 271 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+

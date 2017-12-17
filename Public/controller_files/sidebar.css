@@ -1,0 +1,459 @@
+div#app-page div#langLogo {
+  margin-top: 20px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+div#app-page div.php {
+  background-image: url('/static/image/v2/sidebar/page-lang-php.png');
+}
+div#app-page div.python {
+  background-image: url('/static/image/v2/sidebar/page-lang-python.png');
+}
+div#app-page div.java {
+  background-image: url('/static/image/v2/sidebar/page-lang-java.png');
+}
+div#app-page div.nodejs {
+  background-image: url('/static/image/v2/sidebar/page-lang-nodejs.png');
+}
+div#app-page div.docker {
+  background-image: url('/static/image/v2/sidebar/page-lang-docker.png');
+}
+div#app-page div.go {
+  background-image: url('/static/image/v2/sidebar/page-lang-go.png');
+}
+div#app-page div#sidebar-new ul {
+  list-style: none;
+  margin: 0;
+}
+div#app-page div#sidebar-new ul li.menu {
+  background-position: 1px 3px;
+  display: block;
+  margin: 5px 0 5px 5px;
+  padding: 2px 2px 2px 15px;
+}
+div#app-page div#sidebar-new ul li.menu span.ver {
+  color: #EA5200;
+}
+div#app-page div#sidebar-new ul li.active {
+  background-color: #FFF;
+}
+div#app-page div#sidebar-new ul li.main {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+  padding-left: 0;
+  background: none;
+}
+div#app-page div#sidebar-new ul li.main a {
+  color: #000;
+}
+div#app-page div#sidebar-new ul li font.new-model-notice {
+  background-image: url('/static/image/home/new.gif');
+  width: 25px;
+  background-repeat: no-repeat;
+  z-index: 100;
+  position: absolute;
+  height: 15px;
+}
+div#app-page div#sidebar-new ul li font.recommend-model-notice {
+  background-image: url('/static/image/home/recommand.gif');
+  width: 25px;
+  background-repeat: no-repeat;
+  z-index: 100;
+  position: absolute;
+  height: 18px;
+}
+div#app-page div#sidebar-new ul#applog-submenu {
+  display: none;
+  border: 1px solid #DDD;
+  width: 70px;
+  position: absolute;
+  background-color: #fff;
+}
+div#app-page div#sidebar-new ul#applog-submenu li {
+  border-bottom: 1px solid #DDD;
+}
+div#app-page div.title-box {
+  margin: 5px 0;
+  font-size: 13px;
+  position: relative;
+  height: 60px;
+  border-bottom: 1px solid #DADADA;
+}
+div#app-page div.title-box div#langLogo {
+  width: 80px;
+  float: left;
+  margin-top: 10px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+div#app-page div.title-box div.php {
+  background-image: url('/static/image/v2/sidebar/page-lang-php.png');
+}
+div#app-page div.title-box div.python {
+  background-image: url('/static/image/v2/sidebar/page-lang-python.png');
+}
+div#app-page div.title-box div.java {
+  background-image: url('/static/image/v2/sidebar/page-lang-java.png');
+}
+div#app-page div.title-box ul.app-choose {
+  float: left;
+  margin-top: 15px;
+  list-style-type: none;
+}
+div#app-page div.title-box ul.app-choose li {
+  position: relative;
+  color: #666;
+}
+div#app-page div.title-box ul.app-choose li a.dropdown-toggle {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #36C;
+}
+div#app-page div.title-box ul.app-choose li a.dropdown-toggle b.caret {
+  margin-top: 6px;
+  border-top: 6px solid #36c;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+}
+div#app-page div.title-box ul.app-choose li ul li {
+  height: 26px;
+}
+div#app-page div.title-box ul.app-choose li ul li.first {
+  font-weight: bold;
+  color: #36C;
+  padding: 3px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+div#app-page div.title-box ul.app-choose li ul.dropdown-menu li a {
+  font-size: 14px;
+  width: 120px;
+  overflow: hidden;
+  color: #36c;
+}
+div#app-page div.title-box ul.app-choose li ul.dropdown-menu li a:hover {
+  color: #FFF;
+}
+div#app-page div.title-box ul.app-choose li ul.myapp {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-top-right-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+}
+div#app-page div.title-box ul.app-choose li ul.party {
+  left: 161px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-top-left-radius: 0px;
+  -moz-border-bottom-left-radius: 0px;
+}
+div#app-page div.title-box ul.app-profile {
+  float: left;
+  margin-top: 15px;
+  margin-left: 40px;
+  list-style-type: none;
+}
+div#app-page div.title-box ul.app-profile li.modify a {
+  font-size: 12px;
+  text-decoration: none;
+}
+div#app-page div.title-box ul.app-profile li.introduction {
+  font-size: 13px;
+  color: #999;
+  height: 20px;
+  width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+div#app-page div.row {
+  margin-left: 0px;
+}
+div#app-page div.row .span2#sidebar-wrap {
+  margin-top: -1px;
+  background-color: #eefcfe;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul.dropTop li.active {
+  background-color: #fff;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul {
+  list-style-type: none;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul a {
+  color: #555;
+  text-decoration: none;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul a:hover {
+  text-decoration: none;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.main {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 20px;
+  background: none;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.main a {
+  color: #555;
+  text-decoration: none;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.main a:hover {
+  text-decoration: none;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li:hover {
+  background-color: #ccf3fa;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.main:hover {
+  background-color: none;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.active i {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 15px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.active .sidebar-back {
+  width: 17px;
+  height: 16px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -45px -147px;
+  vertical-align: text-top;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.active .sidebar-whole {
+  width: 18px;
+  height: 14px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -82px 0px;
+  vertical-align: text-top;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active i {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 15px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon0 {
+  width: 18px;
+  height: 17px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -107px -21px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon1 {
+  width: 18px;
+  height: 18px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -82px -49px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon2 {
+  width: 18px;
+  height: 22px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -82px -76px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon3 {
+  width: 18px;
+  height: 20px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -82px -112px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon4 {
+  width: 18px;
+  height: 18px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -82px -149px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon5 {
+  width: 20px;
+  height: 14px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -107px 0px;
+  margin-right: 13px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon6 {
+  width: 18px;
+  height: 17px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -107px -21px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon7 {
+  width: 19px;
+  height: 17px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -107px -49px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon8 {
+  width: 18px;
+  height: 20px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -81px -179px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon9 {
+  width: 18px;
+  height: 20px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -107px -112px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li.title_active .sidebar-icon10 {
+  width: 18px;
+  height: 20px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -107px -112px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul i.sidebar-redirect {
+  width: 18px;
+  height: 18px;
+  float: right;
+  margin: 0px 13px 0px 0px;
+  background: url('/static/image/redirect-icon.png') no-repeat;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li {
+  cursor: pointer;
+  background-position: 1px 3px;
+  display: block;
+  margin: 0px;
+  font-size: 12px;
+  padding: 10px 2px 9px 60px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li i {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 15px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-back {
+  width: 17px;
+  height: 16px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -107px -147px;
+  vertical-align: text-top;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-whole {
+  width: 18px;
+  height: 14px;
+  background: url('/static/image/sidebar-icon.png') no-repeat 0px 0px;
+  vertical-align: text-top;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon0 {
+  width: 18px;
+  height: 17px;
+  background: url('/static/image/sidebar-icon.png') no-repeat 0px -21px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon1 {
+  width: 18px;
+  height: 18px;
+  background: url('/static/image/sidebar-icon.png') no-repeat 0px -49px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon2 {
+  width: 18px;
+  height: 22px;
+  background: url('/static/image/sidebar-icon.png') no-repeat 0px -76px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon3 {
+  width: 18px;
+  height: 20px;
+  background: url('/static/image/sidebar-icon.png') no-repeat 0px -112px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon4 {
+  width: 18px;
+  height: 18px;
+  background: url('/static/image/sidebar-icon.png') no-repeat 0px -148px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon5 {
+  width: 20px;
+  height: 14px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -45px 0px;
+  margin-right: 13px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon6 {
+  width: 18px;
+  height: 17px;
+  background: url('/static/image/sidebar-icon.png') no-repeat 0px -21px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon7 {
+  width: 19px;
+  height: 17px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -45px -49px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon8 {
+  width: 18px;
+  height: 20px;
+  background: url('/static/image/sidebar-icon.png') no-repeat 0px -179px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon9 {
+  width: 18px;
+  height: 20px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -45px -112px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li .sidebar-icon10 {
+  width: 18px;
+  height: 20px;
+  background: url('/static/image/sidebar-icon.png') no-repeat -45px -112px;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar ul li a .ver {
+  color: #EA5200;
+}
+div#app-page div.row .span2#sidebar-wrap .sidebar a.btn {
+  font-weight: bold;
+  margin-left: 25px;
+}
+td.domain-value a.dropdown-toggle {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #36C;
+}
+td.domain-value a.dropdown-toggle b.caret {
+  margin-top: 6px;
+  border-top: 6px solid #36c;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+}
+td.domain-value ul li {
+  height: 26px;
+}
+td.domain-value ul li.first {
+  font-weight: bold;
+  color: #36C;
+  padding: 3px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+td.domain-value ul.dropdown-menu li a {
+  font-size: 12px;
+  min-width: 140px;
+  overflow: hidden;
+  color: #36c;
+}
+td.domain-value ul.dropdown-menu li a:hover {
+  color: #FFF;
+}
+td.domain-value ul.myapp {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-top-right-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+}
+td.domain-value ul.party {
+  left: 161px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-top-left-radius: 0px;
+  -moz-border-bottom-left-radius: 0px;
+}
+div#app-page div#sidebar-new ul li.active {
+  background: #fff;
+}
+.newcare {
+  float: right;
+  margin: 7px 15px 0px 0px;
+  display: inline-block;
+}
+.up-care {
+  width: 13px;
+  height: 8px;
+  background: url('/static/image/sidebar-care.png') no-repeat -27px 0px;
+}
+.down-care {
+  width: 13px;
+  height: 8px;
+  background: url('/static/image/sidebar-care.png') no-repeat 0px 0px;
+}

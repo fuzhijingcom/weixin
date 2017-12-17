@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0111)https://www.sinacloud.com/?m=sso&a=pagelistener&url=https%3A%2F%2Fsae.sina.com.cn%2F%3Fm%3Duser%26a%3Dsso_proxy -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>pagelistener</title>
+<script type="text/javascript">
+var action_t = 0;
+function pagelistener(){
+    setInterval(function(){
+        var scsso_action = getcookie('scsso_action');
+        var scsso_action_t = getcookie('scsso_action_t');
+        var jscode = "";
+        if(action_t==0 || (scsso_action_t != '' && parseInt(scsso_action_t) > action_t)){
+            action_t = parseInt(scsso_action_t);
+            if(scsso_action=="loginsuccess"){
+                jscode = "checklogin";
+            }else if(scsso_action=="logout"){
+                jscode = "logoutcallback";
+            }
+        }
+        if(jscode!=""){
+            document.getElementById('ifm1').src = 'https://sae.sina.com.cn/?m=user&a=sso_proxy#'+Date.parse(new Date())+"|"+jscode;
+        }
+    },1500);
+}
+
+function getcookie(l) {
+    var i = "",
+        I = l + "=";
+    if (document.cookie.length > 0) {
+        offset = document.cookie.indexOf(I);
+        if (offset != -1) {
+            offset += I.length;
+            end = document.cookie.indexOf(";", offset);
+            if (end == -1) end = document.cookie.length;
+            i = unescape(document.cookie.substring(offset, end))
+        }
+    };
+    return i
+}
+function setcookie(O, o, l, I) {
+    var i = "",
+        c = "";
+    if (l != null) {
+        i = new Date((new Date).getTime() + l * 3600000);
+        i = "; expires=" + i.toGMTString()
+    };
+    if (I != null) {
+        c = ";domain=" + I
+    };
+    document.cookie = O + "=" + escape(o) + i + c
+}
+
+</script>
+</head>
+<body onload="pagelistener();">
+    <iframe name="ifm1" id="ifm1" src="saved_resource.html" scrolling="no" frameborder="no" width="0" height="0"></iframe>
+
+</body></html>

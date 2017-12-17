@@ -1,0 +1,70 @@
+#sdk_console_container {
+    margin-left: 230px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+#sdk_console {
+    position: relative;
+}
+
+#sdk_console>.templates {
+    display: none;
+}
+#sdk_console .mid_text,
+#sdk_console .toolbar span {
+    vertical-align: middle;
+}
+#sdk-line {
+    top:50px;height:4px;overflow:hidden;background:#ccc;cursor:n-resize;
+} 
+#sdk_console .toolbar {
+    position: relative;
+    background: #ccc;
+    border-top: solid 1px #aaa;
+}
+#sdk_console .toolbar.collapsed:not(:hover) {
+    display: inline-block;
+    border-top-right-radius: 3px;
+    border-right: solid 1px #aaa;
+}
+#sdk_console .toolbar.collapsed {
+    cursor: default;
+}
+#sdk_console .toolbar.collapsed>.button {
+    display: none;
+}
+#sdk_console .message span.text,
+#sdk_console .message span.action,
+#sdk_console .toolbar .button,
+#sdk_console .switch_button {
+    padding: 0 3px;
+    display: inline-block;
+}
+#sdk_console .message span.action,
+#sdk_console .toolbar .button,
+#sdk_console .switch_button {
+    cursor: pointer;
+}
+#sdk_console .message span.action:hover,
+#sdk_console .toolbar .button:hover,
+#sdk_console .switch_button:hover {
+    background: #ddd;
+}
+#sdk_console .toolbar .button {
+    margin-right: .4em;
+}
+#sdk_console .toolbar .button {
+    float: right;
+}
+#sdk_console .content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: -65px;
+    border-top: solid 1px #aaa;
+    background: #fff;
+    padding-top: .4em;
+    min-height: 200px;
+}

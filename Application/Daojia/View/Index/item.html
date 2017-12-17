@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>{$item.name}</title>
+    <meta name="Keywords" content="优惠券折扣,9块9包邮,限时特卖,优品折扣,银河">
+    <meta name="Description" content="优惠券折扣直播第一站！每天更新千款，纯人工筛选验货，限时限量特卖，全场1折包邮！">
+    <script src="__PUBLIC__/gouwu/item/jquery.min.js"></script>
+    <link href="__PUBLIC__/gouwu/item/wap_common.css" rel="stylesheet">
+    <link href="__PUBLIC__/gouwu/item/wapshow.css" rel="stylesheet">
+<link rel="stylesheet" href="__PUBLIC__/gouwu/item/amazeui.min.css">
+                   <link rel="stylesheet" href="__PUBLIC__/gouwu/item/kele.css">
+                   <link rel="stylesheet" href="__PUBLIC__/gouwu/item/kele.detail.css">
+                   <link rel="stylesheet" href="__PUBLIC__/gouwu/item/layer.css" id="layuicss-skinlayercss"></head>
+<body>
+<div class="main-title clearfix">
+    <a href="javascript:void(0)" class="main-back"></a>
+    <div class="menu-detail">商品详情</div>
+    <a class="mui-action-menu main-more" href="javascript:void(0)" id="mui-action-menu"></a>
+</div>
+<!-- 主界面具体展示内容 -->
+<div class="detail-wrapper img">
+      <a href="{$item.url}">
+        <div class="img">
+          <img src="__ROOT__/{$item.img}">
+        </div>
+        <div class="title-wrapper clearfix">
+            <span class="taobao"></span>
+            {$item.name}       </div>
+    </a>
+
+            
+           
+        
+        <div class="goods-jq clearfix">
+        <div class="goods-price fl">价格：<b>￥{$item.price}</b></div>
+       <!-- <div class="goods-quan fl">优惠券：<b>{$item.youhui}</b>元</div> -->  
+    	</div>
+    	
+    	<div class="recommend-wrapper">
+                <span>小编推荐：</span>
+            </div>  
+                {$item.tuijian}
+</div>
+
+
+
+<div class="weixin-tip">
+    <div class="wechat-line"></div>
+    <div class="wechat-brow"></div>
+    <!--    <div class="wechat-mask"></div>-->
+</div>
+
+
+<div class="buy-wrapper img" style="padding-right: 0;">
+    <span class="price">价格：<i>¥<b style="font-size:22px;">{$item.price}</b></i></span>
+                        <a href="__CONTROLLER__/daigou" class="buy-2he1 ui-link">代购下单&nbsp;&gt;</a>
+            <a href="{$item.url}" class="quan-2he1 ui-link">
+                赞<br><span style="font-size: 15px;color: #ffffff; ">{$item.click}</span>
+            </a>
+        
+    
+</div>
+
+<div class="toTop"></div>
+
+
+</body></html>

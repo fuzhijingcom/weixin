@@ -1,0 +1,56 @@
+@charset 'utf-8';
+.btn-base{background-color:#52BAF3;color:#fff;}
+.btn-base:hover{color:#fff;}
+button.get-vcode{width: 93px;position:absolute;top:0px;right:15px;}
+.mobile-text {width:70%;}
+p.tip{padding-top:7px;font-size:12px;}
+
+.title{width:1000px;margin:25px auto;}
+.title p{font-size:18px;}
+.title p .step-title{font-size:14px;}
+
+.register-inner{width:1000px;margin:10px auto;}
+/*.step{margin:10px 0 30px 0;}
+.step ul{overflow:hidden;}
+.step ul li{float:left;margin:0 1px;width:331px;height:30px;line-height:30px;text-align:center;background:#E9EDF1;}
+.step ul li.active{background:#57BBF1;color:#fff;}*/
+/*.step ul li.step1{border-right: 15px solid transparent;border-bottom:30px solid #57BBF1;color:#fff;}
+.step ul li.step2{-webkit-transform: skew(26deg); -moz-transform: skew(26deg); -o-transform: skew(26deg);background:#57BBF1;}
+.step ul li.step3{-webkit-transform: skew(26deg); -moz-transform: skew(26deg); -o-transform: skew(26deg);background:#57BBF1;}
+.step ul li.step4{border-left: 15px solid transparent;border-bottom:30px solid #57BBF1;color:#fff;}*/
+
+form.form-horizontal label.checkbox-inline{width:80px;}
+form.form-horizontal label.ap{margin-left:0 !important;}
+form.form-horizontal label.un{width:120px;}
+
+p.security-title{padding:10px 0 10px 54px;}
+p.scs-title{font-size:18px;padding-left:45px;}
+p.scs-inv{padding-left:45px;line-height:45px;}
+p.scs-tip{padding-left:45px;line-height:60px;}
+a.entry-ucenter{margin-left:45px;}
+
+.tip_info{margin-left:8px;border:1px solid #ccc;padding:8px 20px 8px 10px;color:#666;position:absolute;display:none;line-height:20px;
+box-shadow:1px 5px 10px #ccc;border-radius:3px;background-color:#fff;}
+.register-type {
+    display:inline-block;
+}
+.register-type  a {
+    display: inline-block;
+    font-size: 22px;
+    color: #333;
+    line-height: 33px;
+    text-decoration:none;
+}
+.register-vline {
+    margin: 0 19px;
+    color: #999;
+}
+.register-cur {
+    border-bottom: 3px solid #ffa00a;
+}
+.forget-h3 {
+    padding:15px;
+}
+#cfm-identity .forget-form-detail {
+    margin-top:25px;
+}

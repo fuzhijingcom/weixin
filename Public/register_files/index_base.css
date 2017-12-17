@@ -1,0 +1,97 @@
+@charset 'utf-8';
+body{font-family:"hiragino sans gb","microsoft yahei";color:#686868;}
+
+/*header*/
+.page-head{background:#148CCA !important;width:100%;height:50px;border-radius: 0 !important;}
+.head{width:1000px;height:50px;margin:0 auto;font-family:"hiragino sans gb","microsoft yahei";font-size:14px;color:#fff;background:#148CCA;}
+.head .head-logo{float:left;padding-top:5px;margin-right:30px;}
+.head .head-logo a img{width:115px;}
+.head .navbar{float:left;margin-bottom:0;margin-right:15px;border:none;}
+.head .navbar ul{margin:0;}
+.head .navbar ul li{float:left;}
+.head .navbar ul li a{padding:15px;color:#fff;text-shadow:none;box-shadow:none;}
+.head .navbar ul li a:link{color:#fff;}
+.head .navbar ul li a:hover{color:#686868;background:#fff;}
+.head .navbar ul li a:visited{color:#fff;}
+.head .navbar ul li:hover a{color:#686868;}
+.head .navbar ul li.active a{color:#fff;background:#38ACE7;box-shadow:none;}
+.head .navbar ul li.active a:hover{color:#686868;background:#fff;box-shadow:none;}
+.head .navbar ul li.active ul.nav-dropdown-list li a{background:none;}
+.head .head-consult{width:130px;height:50px;float:left;padding:15px 0;font-size:14px;}
+.head .head-consult i.phone{display:inline-block;width:20px;height:17px;vertical-align:middle;background:url("/static/common/image/phone.png") -1px 0px no-repeat;}
+.head .account-dropbox{float:right;height:50px;line-height:50px;}
+/*.head .account-dropbox .db,.account{float:left;}*/
+.head .account-dropbox span.divider{color:#38ACE7;}
+.head .account-dropbox a{color:#fff;text-decoration:none;}
+.head .account-dropbox .account{width:146px;height:50px;}
+.head .account-dropbox .account .user{display:inline-block;height:50px;}
+.head .account-dropbox .account .user img.user-avatar{width:30px;height:30px;margin-right:5px;border-radius:50%;}
+/*.head .account-dropbox a.logout-a{padding:0 10px;}
+.head .account-dropbox span.divider{display:inline-block;margin-right:-1px;}*/
+.head .account-dropbox li.nav-dropdown,.db,.account{position:relative;display:inline-block;}
+.head .account-dropbox .db{margin-right:-7px;padding:0 10px 0 10px;}
+.head .account-dropbox .account{margin-left:-7px;padding:0 0 0 10px;}
+.head div.db i.c-arrow{display:inline-block;width:15px;height:15px;vertical-align:middle;background:url("../image/up_down_arrow.png") 0px -1px no-repeat;}
+.head ul.nav-dropdown-list{position:absolute;top:50px;left:-9999px;width:111px;margin:0;border:1px solid #eee;z-index:1000;background:#fff;}
+.head ul.nav-dropdown-list li{width:110px;line-height:30px;text-align:center;}
+.head .navbar ul.nav-dropdown-list li a{display:inline-block;width:110px;padding:2px;color:#686868;text-decoration:none;}
+.head .account-dropbox .db ul.db-dropdown-list{position:absolute;top:50px;left:-9999px;width:116px;margin:0;border:1px solid #eee;z-index:1000;background:#fff;}
+.head ul.db-dropdown-list li{width:115px;float:none;height:33px;line-height:30px;text-align:center;}
+.head ul.db-dropdown-list li a{display:inline-block;width:115px;height:33px;color:#686868;text-decoration:none;}
+.head div.db:hover i.c-arrow{background:url("../image/up_down_arrow.png") -43px -20px no-repeat;}
+.head div.db:hover{background:#fff;}
+.head div.db:hover a.db-nav{color:#686868;}
+.head div.db:hover ul.db-dropdown-list{left:0;right:auto;}
+.head div.db ul li:hover a{background:#ebebeb;}
+
+
+.head .account-dropbox .account .user .username{display:inline-block;max-width:60px;height:50px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.head .account-dropbox .account .user i.level{display:inline-block;width:50px;height:26px;vertical-align:middle;}
+.head .account-dropbox .account .user i.level1{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") 2px -5px no-repeat;}
+.head .account-dropbox .account .user i.level5{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") 2px -90px no-repeat;}
+.head .account-dropbox .account .user i.level6{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") 2px -48px no-repeat;}
+.head .account-dropbox .account .user i.level7{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") 2px -133px no-repeat;}
+.head .account-dropbox .account .user i.level8{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") 2px -175px no-repeat;}
+.head .account-dropbox .account .user i.level99{background:url("//static.sinacloud.com/.app-stor/static/sinacloud/level_icon0.png") 2px -216px no-repeat;}
+.head .account-dropbox .account .user i.c-arrow{display:inline-block;width:15px;height:11px;background:url("../image/up_down_arrow.png") 0px -1px no-repeat;}
+.head .account-dropbox .account:hover i.c-arrow{background:url("../image/up_down_arrow.png") -43px -20px no-repeat;}
+.head .account-dropbox .account ul.account-dropdown-list{position:absolute;top:50px;left:-9999px;width:146px;margin:0;border:1px solid #eee;z-index:1000;background:#fff;}
+.head .account-dropbox .account .account-dropdown-list li{width:146px;float:none;height:33px;line-height:30px;}
+.head .account-dropbox .account .account-dropdown-list li a{display:inline-block;width:144px;height:33px;padding-left:20px;color:#686868;text-decoration:none;}
+.head .account-dropbox .account .account-dropdown-list li a i.twelve-icon{display:inline-block;width:60px;height:20px;margin-left:3px;background:url("//static.sinacloud.com/.app-stor/static/sinacloud/double12.jpg") 0 0 no-repeat;vertical-align:middle;}
+.head .account-dropbox .account .account-dropdown-list li a img.level-up{padding:0 0 3px 5px;}
+.head .account-dropbox .account:hover{background:#fff;}
+.head .account-dropbox .account:hover span.username{color:#686868;}
+.head .account-dropbox .account:hover ul.account-dropdown-list{left:0;right:auto;}
+.head .account-dropbox .account ul.account-dropdown-list li:hover a{background:#ebebeb;}
+
+.head .navbar .nav li ul li:hover{background:#ebebeb;}
+.head .navbar .nav li ul li:hover a{background:#ebebeb;text-decoration:none;}
+.head .navbar .nav li ul li a:hover{background:#ebebeb;}
+.head .navbar .nav li:hover ul{left: auto;}
+.head .navbar .nav li:hover{background:#fff;}
+.head .navbar .nav a:hover{text-decoration:none;}
+
+/*footer*/
+.page-footer{margin-top:20px;background:#fff;border-top:1px solid #ddd;}
+.footer{width:1000px;margin:0 auto;padding:18px 0!important;overflow:hidden;font-family:"hiragino sans gb","microsoft yahei";}
+.footer .footer-item{width:160px;float:left;}
+.footer .follow-item{width:175px;color:#6891AF;}
+.footer .footer-item .footer-title{padding:15px 0;color:#6891AF;}
+.footer .footer-item .footer-title h4{margin:0;border-bottom:none;font-size:18px;font-family:"hiragino sans gb","microsoft yahei";color:#6891AF;}
+.footer .footer-item .footer-link{margin:0;}
+.footer .footer-item .footer-link li{line-height:30px;list-style-type:none;}
+.footer .footer-item .footer-link li a{font-size:12px;color:#6891AF;}
+.footer .footer-item .follow-us{width:160px;height:60px;}
+.footer .footer-item .follow-us span.weibo{display: block;float: left;width: 60px;height: 60px;margin-top: 5px;margin-right: 15px;background: url('../image/weibo_weixin_logo.png') no-repeat -3px -2px;background-size:130px;}
+.footer .footer-item .follow-us span.weibo:hover{background: url('../image/weibo_weixin_logo.png') no-repeat -72px -2px;background-size:130px;}
+.footer .footer-item .follow-us span.weibo a{display:block;width:100%;height:100%;}
+.footer .footer-item .follow-us span.weixin{display: block;float: left;margin-top: 5px;width: 60px;height: 60px;position: relative;cursor: pointer;background: url('../image/weibo_weixin_logo.png') no-repeat 1px -72px;background-size:130px;}
+.footer .footer-item .follow-us img.qr-code{position:absolute;top:-19px;left:0;max-width:none;z-index:99;width:100px;height:100px;}
+.footer .footer-item .follow-us span.weixin:hover{background: url('../image/weibo_weixin_logo.png') no-repeat -68px -72px;background-size:130px;}
+.footer .footer-item .app-download a img{width:100px;}
+.footer .footer-item .true-cloud a img{width:125px;}
+.footer .footer-item .true-cloud ul{margin:0;}
+.footer .footer-item .true-cloud li{line-height:20px;font-size:12px;color:#6891AF;list-style-type:none;}
+.copyright{width:1000px;height:50px;line-height:50px;margin:0 auto;text-align:center;color:#337ab7;border-top:1px dashed #337ab7;font-size:12px;font-family:"hiragino sans gb","microsoft yahei";}
+.copyright a{text-decoration: none;color: #27a9e3;outline: none;}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+html{overflow:hidden;}
+body{background:#FFF; font-size:12px; color:#828282; padding:0px; margin:0px;overflow:hidden;}
+img,* img{border:none; vertical-align:middle;}
+table{border-collapse:collapse;}
+ul,li{list-style:none; margin:0px; padding:0px;}
+
+.clr{height:0px; line-height:0px; font-size:0px; clear:both; padding:0px; margin:0px;}
+.hgt{ height:400px;}
+.loading_img{ background:url(../image/sae_editor/loading_icon1.gif) no-repeat center;}
+
+.topbar{padding:0px 10px; height:38px;line-height:38px; font-size:18px; color:#FFF; background:url(../image/sae_editor/head_bg.gif) repeat-x left top;}
+.topbar span.logo{float:left; margin-top:3px;}
+.topbar span.title{float:left; margin-left:10px;}
+.topbar span#title_appname{float:left; margin-left:30px;}
+.topbar span#title_version{float:left; margin-left:10px;}
+.topbar span.saveall{float:right; margin-top:6px;}
+.saveall_btn1{border-width:1px;outline:none;width:93px;height:26px;line-height:26px;font-size:14px;font-weight:600;padding:0px;margin:0px;color:#000;background:url(../image/sae_editor/saveall_btn.gif) no-repeat center;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+.saveall_btn{width:93px;height:26px;line-height:26px;font-size:14px;font-weight:600;margin:0px;padding:0px;color:#000;}
+
+.ebody{}
+.ebody .eleft{width:230px; float:left; background:#EDEDEE;}
+.ebody .eright{width:780px; float:left; background:#0A001F;}
+
+.eleft #naviarea{background:#EDEDEE; overflow:hidden;}
+.eright #codearea{background:#0A001F;overflow:auto; position:relative}
+.eright #codearea .codecontainer{background:#0A001F; position:absolute; top:0px; left:0px; display:none; width:100%;}
+
+.bodr_r{ border-right:1px solid #CCC;}
+.bodr_l{ border-left:1px solid #CCC;}
+.bodr_t{ border-top:1px solid #CCC;}
+.bodr_b{ border-bottom:1px solid #CCC;}
+
+
+.applistbar{height:26px; background:#F9F9F9;}
+.applistbar span.icon{ float:left; margin-top:6px; margin-left:10px;}
+.applistbar span.pathlist{ float:left; margin-top:4px; margin-left:8px;}
+.applistbar span.pathlist select{ border:none; outline:none; list-style:none; margin:0px; padding:0px;background:#F9F9F9;color:#828282; background-image:none;}
+
+#show_hide_filelist,#prefile{ float:left; width:12px; height:28px; text-align:center; cursor:default;}
+#nextfile{ float:right; width:12px; height:28px; text-align:center; cursor:default;}
+
+.tabbarout{overflow:hidden; height:28px; float:left; width:400px;}
+.tabbar{ height:28px; width:40000px;}
+.tabbar_bg{height:28px; line-height:28px; background:url(../image/sae_editor/tab_bar_bg.gif) repeat-x left center;}
+.tabbar .tab{width:151px; height:28px;background:url(../image/sae_editor/tab_bg.gif) repeat-x left center; float:left; cursor:pointer; overflow:hidden;}
+.tabbar .cur_tab{background:url(../image/sae_editor/tab_cur_bg.gif) repeat-x left center;}
+.tabbar .tab span.title{float:left; display:block; width:120px; height:28px; text-align:center; line-height:28px; overflow:hidden; margin-left:5px;}
+.tabbar .tab span.icon{float:left; display:block; width:20px; height:28px; margin-top:9px; margin-left:5px;}
+.tabbar .tab span.icon .close_icon{ background:url(../image/sae_editor/close_icon.gif) no-repeat center;}
+.tabbar .tab span.icon .save_icon{ background:url(../image/sae_editor/save_icon.gif) no-repeat center;}
+.tabbar .tab span.icon .loading_icon{ background:url(../image/sae_editor/loading_icon1.gif) no-repeat center;}
+
+#filelist{position:relative;overflow:auto;}
+#filelist .selected_bg{ position:absolute; display:none; height:20px; width:229px; left:0px; z-index:0; background:url(../image/sae_editor/selected_bg.gif) repeat-x left top;}
+
+ul.tree{margin-left:10px; position:relative;z-index:2;}
+ul.tree ul{}
+ul.tree li{padding-left:10px;height:20px; line-height:20px;overflow:hidden; background-repeat:no-repeat; background-position:left 8px; cursor:default;}
+ul.tree li div{padding-left:20px;background-repeat:no-repeat; background-position:left center;}
+ul.tree li div.selected{color:#FFF;}
+ul.tree li.dir_open{background-image:url(../image/sae_editor/arrow_bottom.gif);}
+ul.tree li.dir_open div{background-image:url(../image/sae_editor/folder_open_icon.gif);}
+ul.tree li.dir_open div.block{background-image:url(../image/sae_editor/drafts_open_icon.gif);}
+ul.tree li.dir_close{background-image:url(../image/sae_editor/arrow_right.gif);}
+ul.tree li.dir_close .name{height:20px;overflow:hidden;}
+ul.tree li.dir_close div{background-image:url(../image/sae_editor/folder_close_icon.gif);}
+ul.tree li.dir_close div.block{background-image:url(../image/sae_editor/drafts_close_icon.gif);}
+ul.tree li.file{}
+ul.tree li.file .name{height:20px;overflow:hidden;}
+ul.tree li.file div{background-image:url(../image/sae_editor/file_icon.gif);}
+
+.exmenu{ position:absolute; left:150px;display:none;padding:5px 0px;background-color:#FFF; border:1px solid #999; z-index:20; -moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px;}
+.exmenu .entry{height:28px; line-height:28px; padding:0px 15px; width:110px; font-size:14px;cursor:default;}
+.exmenu .selected{ color:#FFF;background:url(../image/sae_editor/selected_bg.gif) repeat-x left top;}
+.exmenu .split{height:1px; font-size:1px; line-height:1px; padding:0px 8px;margin:3px 0px;}
+.exmenu .split .line{border-bottom:1px solid #ccc;}
