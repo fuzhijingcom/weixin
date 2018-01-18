@@ -100,7 +100,7 @@ class IndexController extends Controller {
         $controller_id = $tableModel ->where("file_id='$file_id'")->getfield('controller_id');
         $file_name = $tableModel ->where("file_id='$file_id'")->getfield('file_name');
     
-        $fileName = "/home/wwwroot/weixin.yudw.com/uid/".$controller_id."/".$file_name.".php";
+        $fileName = "/home/wwwroot/weixin.hapu.net/uid/".$controller_id."/".$file_name.".php";
     
         $this->assign('file_name',$file_name.".php");
     
@@ -127,7 +127,7 @@ class IndexController extends Controller {
         $tableModel = M('table');
         $controller_id = $tableModel ->where("file_id='$file_id'")->getfield('controller_id');
         $file_name = $tableModel ->where("file_id='$file_id'")->getfield('file_name');
-        $fileName = "/home/wwwroot/weixin.yudw.com/uid/".$controller_id."/".$file_name.".php";
+        $fileName = "/home/wwwroot/weixin.hapu.net/uid/".$controller_id."/".$file_name.".php";
         
        //dump($fileName);
         

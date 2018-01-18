@@ -67,7 +67,7 @@ $id = $_GET['id'];
 
 
 
-$filename = "/home/wwwroot/weixin.yudw.com/uid/1/index.php";
+$filename = "/home/wwwroot/weixin.hapu.net/uid/1/index.php";
 
 
 $handle = fopen($filename, "w"); 
@@ -89,7 +89,7 @@ if(fwrite($handle, $text) == FALSE){
   
     <div class="weui-msg__opr-area">
         <p class="weui-btn-area">
-	<a href="http://weixin.yudw.com/edit.php?id=<?php echo $id;?>" class="weui-btn weui-btn_primary" id="close">返回，继续编辑PHP文件</a>
+	<a href="http://weixin.hapu.net/edit.php?id=<?php echo $id;?>" class="weui-btn weui-btn_primary" id="close">返回，继续编辑PHP文件</a>
         </p>
     </div>
 
