@@ -333,5 +333,12 @@ class IndexController extends Controller {
         
         $this->display();
     }
+ 
     
+
+    public function logout(){
+        session('controller_id',NULL);
+        session('controller_name',NULL);
+        $this->redirect('index');
+    }
 }
