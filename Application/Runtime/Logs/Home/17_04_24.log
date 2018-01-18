@@ -1,9 +1,0 @@
-[ 2017-04-24T07:00:33+08:00 ] 183.57.53.197 /home/index/svn.php?a%3Dgetdir
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
-ERR: 非法操作:svn.php
-
